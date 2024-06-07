@@ -3,12 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Sen:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Montserrat:wght@100..900&family=Playfair+Display&display=swap"
       rel="stylesheet"
-    /> -->
+    />
     <title>Tours to the carpathians from Lviv</title>
     <link
       rel="stylesheet"
@@ -17,8 +17,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <!-- <link rel="stylesheet" href="./css/null-style.css" />
-    <link rel="stylesheet" href="./css/style.css" /> -->
+    <link rel="stylesheet" href="./css/null-style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <!-- HEADER -->
@@ -28,10 +28,10 @@
         <nav class="header-navigation">
           <a class="header-logo" href="./index.html">
             <img
-              src="./images/header-logo.svg"
+              src="./images/icons.svg#icon-logo"
               alt="logo"
-              width="60"
-              height="60"
+              width="40"
+              height="40"
             />
           </a>
           <ul class="header-menu-list">
@@ -59,29 +59,17 @@
               >
             </li>
           </ul>
-          <!-- <button
-            type="button"
-            class="header-mob-btn-open"
-            onclick="toggleMenu()"
-          >
-            <svg class="header-btn-icon" width="24" height="24">
+          <button type="button" class="header-menu-btn" onclick="toggleMenu()">
+            <svg class="header-btn-icon" width="40" height="40">
               <use href="./images/icons.svg#icon-mob-menu"></use>
             </svg>
-          </button> -->
+          </button>
         </nav>
 
         <!-- mobile menu -->
         <!-- <div class="backdrop" onclick="toggleMenu()"></div>
         <div class="header-mob-menu">
-          <button
-            type="button"
-            class="header-mob-btn-close"
-            onclick="toggleMenu()"
-          >
-            <svg class="header-btn-icon" width="10" height="10">
-              <use href="./images/icons.svg#icon-mob-menu-close"></use>
-            </svg>
-          </button>
+
           <ul class="header-mob-menu-list">
             <li class="header-mob-menu-item">
               <a
@@ -169,53 +157,55 @@
       <!-- SECTION HERO -->
       <section class="hero">
         <div class="container hero-container">
-          <h1 class="hero-title">Tours to the carpathians from lviv</h1>
-          <p class="hero-paragraph">
-            Journeys to the very heart of the Carpathians for those who want a
-            real reboot
-          </p>
-          <button class="hero-btn" type="button">book a tour</button>
-          <ul class="hero-social">
-            <li class="hero-social-telegram">
-              <a
-                class="footer-social-link"
-                href="#"
-                aria-label="telegram"
-                target="_blank"
-                rel="noreferrer noopener"
-                >telegram
-                <!-- <svg class="hero-social-icon" width="40" height="40">
-                  <use href="./icons.svg#icon-telegram"></use>
-                </svg> -->
-              </a>
-            </li>
-            <li class="hero-social-instagram">
-              <a
-                class="footer-social-link"
-                href="#"
-                aria-label="instagram"
-                target="_blank"
-                rel="noreferrer noopener"
-                >instagram
-                <!-- <svg class="hero-social-icon" width="40" height="40">
-                  <use href="./icons.svg#icon-instagram"></use>
-                </svg> -->
-              </a>
-            </li>
-            <li class="hero-social-facebook">
-              <a
-                class="footer-social-link"
-                href="#"
-                aria-label="facebook"
-                target="_blank"
-                rel="noreferrer noopener"
-                >facebook
-                <!-- <svg class="hero-social-icon" width="40" height="40">
-                  <use href="./icons.svg#icon-facebook"></use>
-                </svg> -->
-              </a>
-            </li>
-          </ul>
+          <div class="hero-box">
+            <h1 class="hero-box-title">Tours to the carpathians from lviv</h1>
+            <p class="hero-box-paragraph">
+              Journeys to the very heart of the Carpathians for those who want a
+              real reboot
+            </p>
+            <button class="hero-box-btn" type="button">book a tour</button>
+            <!-- <ul class="hero-box-social">
+              <li class="hero-box-social-telegram">
+                <a
+                  class="hero-box-social-link"
+                  href="#"
+                  aria-label="telegram"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  >telegram
+                  <svg class="hero-box-social-icon" width="40" height="40">
+                    <use href="./icons.svg#icon-telegram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="hero-box-social-instagram">
+                <a
+                  class="hero-box-social-link"
+                  href="#"
+                  aria-label="instagram"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  >instagram
+                  <svg class="hero-box-social-icon" width="40" height="40">
+                    <use href="./icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="hero-box-social-facebook">
+                <a
+                  class="hero-box-social-link"
+                  href="#"
+                  aria-label="facebook"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  >facebook
+                  <svg class="hero-box-social-icon" width="40" height="40">
+                    <use href="./icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul> -->
+          </div>
           <!-- <div class="hero-bg-desktop"></div> -->
         </div>
       </section>
@@ -223,8 +213,8 @@
       <!-- SECTION ABOUT US -->
       <section id="aboutUs" class="about">
         <div class="container about-container">
-          <h2 class="experience-title">About us</h2>
-          <p class="experience-paragraph">
+          <h2 class="about-title">About us</h2>
+          <p class="about-paragraph">
             Travel is our life. We have been organizing tours to the Carpathians
             since 2007 and have never been bored for a single day. The
             Carpathians are many interesting and unexplored places that are
@@ -259,25 +249,126 @@
       <section id="tours" class="tours">
         <div class="container tours-container">
           <h2 class="tours-title">Upcoming tours</h2>
-
           <ul class="tours-list">
             <li class="tours-list-item">
-              <img src="" alt="Ascent to Hoverla" />
-              <h3 class="tours-item-title">Ascent to Hoverla</h3>
-              <p class="tours-item-paragraph">From UAH 4,499/person</p>
-              <button class="tours-item-btn" type="button">more details</button>
+              <picture class="tours-list-item-image">
+                <source
+                  media="(min-width: 1440px) and (min-resolution: 2dppx)"
+                  srcset="./images/desktop-tours-1-2х.jpg 2x"
+                />
+                <source
+                  media="(min-width: 1440px)"
+                  srcset="./images/desktop-tours-1.jpg"
+                />
+                <source
+                  media="(min-width: 768px) and (min-resolution: 2dppx)"
+                  srcset="./images/tablet-tours-2-2х.jpg 2x"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/tablet-tours-2.jpg"
+                />
+                <source
+                  media="(min-width: 375px) and (min-resolution: 2dppx)"
+                  srcset="./images/mobile-tours-1-2х.jpg 2x"
+                />
+                <source
+                  media="(min-width: 375px)"
+                  srcset="./images/mobile-tours-1.jpg"
+                />
+                <img
+                  class="tours-list-item-image"
+                  src="./images/mobile-tours-1.jpg"
+                  alt="Ascent to Hoverla"
+                />
+              </picture>
+              <div class="tours-list-item-info">
+                <h3 class="tours-item-title">Ascent to Hoverla</h3>
+                <p class="tours-item-paragraph">From UAH 4,499/person</p>
+                <button class="tours-item-btn" type="button">
+                  more details
+                </button>
+              </div>
             </li>
             <li class="tours-list-item">
-              <img src="" alt="Ski tour to Bukovel" />
-              <h3 class="tours-item-title">Ski tour to Bukovel</h3>
-              <p class="tours-item-paragraph">From UAH 7,499/person</p>
-              <button class="tours-item-btn" type="button">more details</button>
+              <picture class="tours-list-item-image">
+                <source
+                  media="(min-width: 1440px) and (min-resolution: 2dppx)"
+                  srcset="./images/desktop-tours-2-2х.jpg 2x"
+                />
+                <source
+                  media="(min-width: 1440px)"
+                  srcset="./images/desktop-tours-2.jpg"
+                />
+                <source
+                  media="(min-width: 768px) and (min-resolution: 2dppx)"
+                  srcset="./images/tablet-tours-3-2х.jpg 2x"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/tablet-tours-3.jpg"
+                />
+                <source
+                  media="(min-width: 375px) and (min-resolution: 2dppx)"
+                  srcset="./images/mobile-tours-2-2х.jpg 2x"
+                />
+                <source
+                  media="(min-width: 375px)"
+                  srcset="./images/mobile-tours-2.jpg"
+                />
+                <img
+                  class="tours-list-item-image"
+                  src="./images/mobile-tours-2.jpg"
+                  alt="Ski tour to Bukovel"
+                />
+              </picture>
+              <div class="tours-list-item-info">
+                <h3 class="tours-item-title">Ski tour to Bukovel</h3>
+                <p class="tours-item-paragraph">From UAH 7,499/person</p>
+                <button class="tours-item-btn" type="button">
+                  more details
+                </button>
+              </div>
             </li>
             <li class="tours-list-item">
-              <img src="" alt="Week in Carpathians" />
-              <h3 class="tours-item-title">Week in Carpathians</h3>
-              <p class="tours-item-paragraph">From UAH 9,999/person</p>
-              <button class="tours-item-btn" type="button">more details</button>
+              <picture class="tours-list-item-image">
+                <source
+                  media="(min-width: 1440px) and (min-resolution: 2dppx)"
+                  srcset="./images/desktop-tours-3-2х.jpg 2x"
+                />
+                <source
+                  media="(min-width: 1440px)"
+                  srcset="./images/desktop-tours-3.jpg"
+                />
+                <source
+                  media="(min-width: 768px) and (min-resolution: 2dppx)"
+                  srcset="./images/tablet-tours-1-2х.jpg 2x"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/tablet-tours-1.jpg"
+                />
+                <source
+                  media="(min-width: 375px) and (min-resolution: 2dppx)"
+                  srcset="./images/mobile-tours-3-2х.jpg 2x"
+                />
+                <source
+                  media="(min-width: 375px)"
+                  srcset="./images/mobile-tours-3.jpg"
+                />
+                <img
+                  class="tours-list-item-image"
+                  src="./images/mobile-tours-3.jpg"
+                  alt="Week in Carpathians"
+                />
+              </picture>
+              <div class="tours-list-item-info">
+                <h3 class="tours-item-title">Week in Carpathians</h3>
+                <p class="tours-item-paragraph">From UAH 9,999/person</p>
+                <button class="tours-item-btn" type="button">
+                  more details
+                </button>
+              </div>
             </li>
           </ul>
         </div>
@@ -289,171 +380,215 @@
           <h2 class="reviews-title">Reviews</h2>
           <ul class="reviews-list">
             <li class="reviews-list-item">
-              <!-- <picture class="projects-item-image">
+              <div class="reviews-list-item-bg"></div>
+              <div class="reviews-list-item-content">
+                <picture>
                   <source
                     media="(min-width: 1440px) and (min-resolution: 2dppx)"
-                    srcset="./images/desktop-my-projects-2x.jpg 2x"
+                    srcset="./images/desktop-reviews-user-1-2х.png 2x"
                   />
                   <source
                     media="(min-width: 1440px)"
-                    srcset="./images/desktop-my-projects.jpg"
+                    srcset="./images/desktop-reviews-user-1.png"
                   />
                   <source
                     media="(min-width: 768px) and (min-resolution: 2dppx)"
-                    srcset="./images/tablet-my-projects-2x.jpg 2x"
+                    srcset="./images/tablet-reviews-user-1-2х.png 2x"
                   />
                   <source
                     media="(min-width: 768px)"
-                    srcset="./images/tablet-my-projects.jpg"
+                    srcset="./images/tablet-reviews-user-1.png"
                   />
                   <source
-                    media="(min-width: 360px) and (min-resolution: 2dppx)"
-                    srcset="./images/mobile-my-projects-2x.jpg 2x"
+                    media="(min-width: 375px) and (min-resolution: 2dppx)"
+                    srcset="./images/mobile-reviews-user-1-2х.png 2x"
                   />
                   <source
-                    media="(min-width: 360px)"
-                    srcset="./images/mobile-my-projects.jpg"
+                    media="(min-width: 375px)"
+                    srcset="./images/mobile-reviews-user-1.png"
                   />
                   <img
-                    class="projects-item-image"
-                    src="./images/mobile-my-projects.jpg"
-                    alt="My projects"
+                    class="reviews-list-item-photo"
+                    src="./images/mobile-reviews-user-1.png"
+                    alt="photo of Maria"
                   />
-                </picture> -->
-              <h3 class="reviews-item-title">Maria</h3>
-              <p class="reviews-item-paragraph">
-                It was really cool! We saw everything - sun, snow, rain, fog!
-                It's very exciting and interesting, you won't regret it - it's
-                worth going and seeing everything with your own eyes. Everything
-                is organized at the highest level.
-              </p>
+                </picture>
+                <h3 class="reviews-item-title">Maria</h3>
+                <p class="reviews-item-paragraph">
+                  It was really cool! We saw everything - sun, snow, rain, fog!
+                  It's very exciting and interesting, you won't regret it - it's
+                  worth going and seeing everything with your own eyes.
+                  Everything is organized at the highest level.
+                </p>
+              </div>
             </li>
             <li class="reviews-list-item">
-              <!-- <picture class="projects-item-image">
+              <div class="reviews-list-item-bg"></div>
+              <div class="reviews-list-item-content">
+                <picture>
                   <source
                     media="(min-width: 1440px) and (min-resolution: 2dppx)"
-                    srcset="./images/desktop-my-projects-2x.jpg 2x"
+                    srcset="./images/desktop-reviews-user-2-2х.png 2x"
                   />
                   <source
                     media="(min-width: 1440px)"
-                    srcset="./images/desktop-my-projects.jpg"
+                    srcset="./images/desktop-reviews-user-2.png"
                   />
                   <source
                     media="(min-width: 768px) and (min-resolution: 2dppx)"
-                    srcset="./images/tablet-my-projects-2x.jpg 2x"
+                    srcset="./images/tablet-reviews-user-2-2х.png 2x"
                   />
                   <source
                     media="(min-width: 768px)"
-                    srcset="./images/tablet-my-projects.jpg"
+                    srcset="./images/tablet-reviews-user-2.png"
                   />
                   <source
-                    media="(min-width: 360px) and (min-resolution: 2dppx)"
-                    srcset="./images/mobile-my-projects-2x.jpg 2x"
+                    media="(min-width: 375px) and (min-resolution: 2dppx)"
+                    srcset="./images/mobile-reviews-user-2-2х.png 2x"
                   />
                   <source
-                    media="(min-width: 360px)"
-                    srcset="./images/mobile-my-projects.jpg"
+                    media="(min-width: 375px)"
+                    srcset="./images/mobile-reviews-user-2.png"
                   />
                   <img
-                    class="projects-item-image"
-                    src="./images/mobile-my-projects.jpg"
-                    alt="My projects"
+                    class="reviews-list-item-photo"
+                    src="./images/mobile-reviews-user-2.png"
+                    alt="photo of Ostap"
                   />
-                </picture> -->
-              <h3 class="reviews-item-title">Ostap</h3>
-              <p class="reviews-item-paragraph">
-                Good organization, everything went smoothly. Friendly guide
-                Taras told interesting facts about the area and customs
-                throughout the tour.
-              </p>
+                </picture>
+                <h3 class="reviews-item-title">Ostap</h3>
+                <p class="reviews-item-paragraph">
+                  Good organization, everything went smoothly. Friendly guide
+                  Taras told interesting facts about the area and customs
+                  throughout the tour.
+                </p>
+              </div>
             </li>
-            <li class="reviews-list-item">
-              <!-- <picture class="projects-item-image">
+            <li class="reviews-list-item visually-hidden">
+              <div class="reviews-list-item-bg"></div>
+              <div class="reviews-list-item-content">
+                <picture>
                   <source
                     media="(min-width: 1440px) and (min-resolution: 2dppx)"
-                    srcset="./images/desktop-my-projects-2x.jpg 2x"
+                    srcset="./images/desktop-reviews-user-3-2х.png 2x"
                   />
                   <source
                     media="(min-width: 1440px)"
-                    srcset="./images/desktop-my-projects.jpg"
+                    srcset="./images/desktop-reviews-user-3.png"
                   />
                   <source
                     media="(min-width: 768px) and (min-resolution: 2dppx)"
-                    srcset="./images/tablet-my-projects-2x.jpg 2x"
+                    srcset="./images/tablet-reviews-user-3-2х.png 2x"
                   />
                   <source
                     media="(min-width: 768px)"
-                    srcset="./images/tablet-my-projects.jpg"
+                    srcset="./images/tablet-reviews-user-3.png"
                   />
                   <source
-                    media="(min-width: 360px) and (min-resolution: 2dppx)"
-                    srcset="./images/mobile-my-projects-2x.jpg 2x"
+                    media="(min-width: 375px) and (min-resolution: 2dppx)"
+                    srcset="./images/mobile-reviews-user-3-2х.png 2x"
                   />
                   <source
-                    media="(min-width: 360px)"
-                    srcset="./images/mobile-my-projects.jpg"
+                    media="(min-width: 375px)"
+                    srcset="./images/mobile-reviews-user-3.png"
                   />
                   <img
-                    class="projects-item-image"
-                    src="./images/mobile-my-projects.jpg"
-                    alt="My projects"
+                    class="reviews-list-item-photo"
+                    src="./images/mobile-reviews-user-3.png"
+                    alt="photo of Anita"
                   />
-                </picture> -->
-              <h3 class="reviews-item-title">Anita</h3>
-              <p class="reviews-item-paragraph">
-                Who is going to the mountains for the first time - this is
-                exactly the tour and the people who organize everything. Guide
-                Makar is interesting stories, selection of a route for a
-                comfortable ascent, motivation and support.
-              </p>
+                </picture>
+                <h3 class="reviews-item-title">Anita</h3>
+                <p class="reviews-item-paragraph">
+                  Who is going to the mountains for the first time - this is
+                  exactly the tour and the people who organize everything. Guide
+                  Makar is interesting stories, selection of a route for a
+                  comfortable ascent, motivation and support.
+                </p>
+              </div>
             </li>
           </ul>
         </div>
       </section>
 
       <!-- SECTION GALLERY -->
-      <section id="gallery" class="gallery"></section>
-      <h2 class="gallery-title">Gallery</h2>
-      <ul class="gallery-list">
-        <li class="gallery-list-item"><img src="#" alt="gallery image" /></li>
-        <li class="gallery-list-item"><img src="#" alt="gallery image" /></li>
-        <button type="button" class="gallery-list-btn"></button>
-        <button type="button" class="gallery-list-btn"></button>
-      </ul>
+      <section id="gallery" class="gallery">
+        <div class="container gallery-container">
+          <h2 class="gallery-title">Gallery</h2>
+          <ul class="gallery-list">
+            <li class="gallery-list-item"></li>
+            <li class="gallery-list-item"></li>
+            <li class="gallery-list-item"></li>
+            <li class="gallery-list-item"></li>
+            <li class="gallery-list-item"></li>
+            <li class="gallery-list-item"></li>
+            <li class="gallery-list-item"></li>
+            <li class="gallery-list-item"></li>
+            <div class="gallery-list-box-btn">
+              <button type="button" class="gallery-list-btn"></button>
+              <button type="button" class="gallery-list-btn"></button>
+            </div>
+          </ul>
+        </div>
+      </section>
 
       <!-- SECTION QUESTIONS -->
       <section class="questions">
         <h2 class="questions-title"><!-- скрыть при помощи CSS --></h2>
         <div class="container questions-container">
           <div class="questions-box">
-            <h2 class="questions-box-title">Do you have any questions?</h2>
+            <h3 class="questions-box-title">Do you have any questions?</h3>
             <p class="questions-box-paragraph">
               You can leave your questions here and our manager will call you
               back within 10 minutes
             </p>
             <form class="questions-box-form">
-              <label for="name" aria-label="Your name"></label>
-              <input type="text" placeholder="Your name*" name="name" />
-              <label for="phone" aria-label="Phone number"></label>
-              <input
-                class="questions-form-input"
-                type="tel"
-                placeholder="Phone number*"
-                name="phone"
-              />
-              <label
-                class="questions-form-label"
-                for="question"
-                aria-label="What would you
+              <div class="questions-form-field">
+                <label
+                  class="questions-form-label"
+                  for="name"
+                  aria-label="Your name"
+                ></label>
+                <input
+                  class="questions-form-input"
+                  type="text"
+                  placeholder="Your name*"
+                  name="name"
+                  id="name"
+                  required
+                />
+              </div>
+              <div class="questions-form-field">
+                <label
+                  class="questions-form-label"
+                  for="phone"
+                  aria-label="Phone number"
+                ></label>
+                <input
+                  class="questions-form-input"
+                  type="tel"
+                  placeholder="Phone number*"
+                  name="phone"
+                  id="phone"
+                  required
+                />
+              </div>
+              <div class="questions-form-field">
+                <label
+                  class="questions-form-label"
+                  for="question"
+                  aria-label="What would you
                 like to know?"
-              ></label>
-              <input
-                class="questions-form-input"
-                type="text"
-                placeholder="What would you
-                like to know?"
-                name="question"
-              />
+                ></label>
+                <input
+                  class="questions-form-input"
+                  type="text"
+                  placeholder="What would you like to know?"
+                  name="question"
+                  id="question"
+                />
+              </div>
+
               <button type="button" class="questions-form-btn">call me</button>
             </form>
           </div>
@@ -468,9 +603,15 @@
             <div class="footer-box-contacts">
               <address class="footer-box-adress">
                 <ul class="footer-adress-list">
-                  <li class="footer-adress-item">Lviv, st. Doroshenko, 44 k</li>
+                  <li class="footer-adress-item">
+                    <svg class="footer-adress-icon" width="40" height="40">
+                      <use href="./images/icons.svg#icon-place"></use></svg
+                    >Lviv, st. Doroshenko, 44 k
+                  </li>
                   <li class="footer-adress-item">
                     <a class="footer-adress-item-link" href="tel:+380971626790"
+                      ><svg class="footer-adress-icon" width="40" height="40">
+                        <use href="./images/icons.svg#icon-phone"></use></svg
                       >+38 (097) 162-67-90</a
                     >
                   </li>
@@ -478,6 +619,8 @@
                     <a
                       class="footer-adress-item-link"
                       href="mailto:mandrykarpaty@gmail.com"
+                      ><svg class="footer-adress-icon" width="40" height="40">
+                        <use href="./images/icons.svg#icon-email"></use></svg
                       >mandrykarpaty@gmail.com</a
                     >
                   </li>

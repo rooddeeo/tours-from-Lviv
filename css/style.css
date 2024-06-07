@@ -1,0 +1,535 @@
+/* -- GLOBAL STYLE -- */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  color: var(--secondary-text);
+  background-color: var(--light);
+}
+/* "Playfair Display", serif, "Manrope", sans-serif; */
+@font-face {
+  font-family: "Gilroy";
+  src: url("./gilroy.ttf");
+  font-style: normal;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.list {
+  list-style-type: none;
+}
+
+:root {
+  --font-family: "Montserrat", sans-serif;
+  --second-family: "Manrope", sans-serif;
+  --third-family: "Playfair Display", sans-serif;
+  --font3: "Gilroy", sans-serif;
+  --light: #f7fbfb;
+  --primary-text: #1b1d1b;
+  --secondary-text: #202321;
+  --blue: #5b86a1;
+  --grey: #a3a5a3;
+}
+
+/* -- HEADER -- */
+
+.container {
+  width: 320px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+.header-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.header-navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-logo {
+  width: 40px;
+  height: 40px;
+}
+
+.header-menu-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border: none;
+}
+
+.header-btn-icon {
+  stroke: var(--light);
+}
+/* -- mobile menu -- */
+/*.backdrop {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 888;
+  backdrop-filter: blur(2px);
+  background-color: rgba(30, 24, 35, 0.5);
+  transition: opacity 300ms linear, visibility 300ms linear;
+}
+
+.backdropOn {
+  display: block;
+}
+
+.header-mob-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  width: 200px;
+  height: 100%;
+  padding: 20px;
+  background-color: var(--base);
+  border-right: 1px solid var(--dark-grey);
+  overflow: auto;
+  transform: translateX(-100%);
+  transition-property: transform;
+  transition-duration: 550ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-mob-menu.open {
+  transform: translateX(0);
+}
+
+ .header-mob-btn-close {
+  display: block;
+  margin-left: auto;
+  cursor: pointer;
+  fill: #ffffff;
+} 
+
+.header-mob-menu-link {
+  color: var(--peach-accent);
+}
+
+.header-mob-menu-item {
+  margin-bottom: 20px;
+}
+
+.header-mob-menu-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+*/
+.header-menu-list {
+  display: none;
+}
+
+/* -- HERO -- */
+
+.hero-container {
+  position: relative;
+  padding-top: 188px;
+  padding-bottom: 193px;
+  background-image: url(../images/mobile-hero.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+@media (min-divice-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero-container {
+    background-image: url(../images/mobile-hero-2х.jpg);
+  }
+}
+
+.hero-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.hero-box-title {
+  min-width: 311px;
+  font-size: 40px;
+  font-weight: 400;
+  margin-bottom: 60px;
+  color: var(--light);
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.hero-box-paragraph {
+  font-weight: 500;
+  margin-bottom: 88px;
+  color: var(--light);
+  text-align: center;
+}
+
+.hero-box-btn {
+  font-family: var(--second-family);
+  padding: 10px 91px;
+  background-color: var(--blue);
+  border: none;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: var(--light);
+}
+
+/* -- SECTION ABOUT US -- */
+
+.about-container {
+  padding-top: 52px;
+  padding-bottom: 26px;
+}
+.about-title {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 32px;
+  color: var(--primary-text);
+  text-align: center;
+  margin-bottom: 28px;
+}
+.about-paragraph {
+  font-family: var(--font-family);
+  color: var(--secondary-text);
+}
+
+/* -- SECTION OUR ADVANTAGES -- */
+
+.advantages-container {
+  padding-top: 26px;
+  padding-bottom: 26px;
+}
+.advantages-title {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 32px;
+  color: var(--primary-text);
+  text-align: center;
+  margin-bottom: 28px;
+}
+.advantages-list {
+  padding-top: 87px;
+  padding-bottom: 87px;
+  background-image: url(../images/mobile-advantages-1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+@media (min-divice-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .advantages-list {
+    background-image: url(../images/mobile-advantages-1-2х.jpg);
+  }
+}
+
+.advantages-list-item {
+  padding: 8px 7px 8px 30px;
+  font-family: var(--font-family);
+  font-size: 14px;
+  color: var(--light);
+  background-color: var(--blue);
+}
+
+.questions-box-form:not(:last-of-type) {
+  margin-bottom: 28px;
+}
+
+/* -- SECTION UPCOMING TOURS -- */
+
+.tours {
+}
+.container {
+}
+.tours-container {
+  padding-top: 26px;
+  padding-bottom: 26px;
+}
+.tours-title {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 32px;
+  color: var(--primary-text);
+  text-align: center;
+  margin-bottom: 28px;
+}
+.tours-list {
+}
+.tours-list-item {
+}
+.tours-list-item-image {
+}
+.tours-list-item-info {
+  border-right: 1px solid var(--blue);
+  border-bottom: 1px solid var(--blue);
+  border-left: 1px solid var(--blue);
+  padding: 28px 20px 28px 20px;
+}
+.tours-item-title {
+  font-weight: 600;
+  font-size: 20px;
+  color: var(--primary-text);
+  margin-bottom: 16px;
+}
+.tours-item-paragraph {
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--secondary-text);
+  margin-bottom: 20px;
+}
+.tours-item-btn {
+  font-family: var(--font-family);
+  padding: 16px 61px;
+  background-color: var(--blue);
+  border: none;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: var(--light);
+  display: block;
+  margin: 0 auto;
+}
+
+/* -- SECTION REVIEWS -- */
+
+.reviews {
+}
+.container {
+}
+.reviews-container {
+  padding-top: 26px;
+  padding-bottom: 26px;
+}
+.reviews-title {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 32px;
+  color: var(--primary-text);
+  text-align: center;
+  margin-bottom: 28px;
+}
+.reviews-list {
+}
+
+.reviews-list-item:not(:last-child) {
+  margin-bottom: 32px;
+}
+.reviews-list-item-bg {
+  height: 134px;
+  background-image: url(../images/mobile-reviews-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+@media (min-divice-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .reviews-list-item-bg {
+    background-image: url(../images/mobile-reviews-bg-2х.jpg);
+  }
+}
+.reviews-list-item-photo {
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translate(-50%);
+  width: 100px;
+  height: 100px;
+}
+.reviews-list-item-content {
+  position: relative;
+  border-right: 1px solid var(--blue);
+  border-bottom: 1px solid var(--blue);
+  border-left: 1px solid var(--blue);
+  padding: 70px 35px 48px 35px;
+  min-height: 318px;
+}
+.reviews-item-title {
+  font-weight: 600;
+  font-size: 20px;
+  text-align: center;
+  color: var(--blue);
+  margin-bottom: 16px;
+}
+.reviews-item-paragraph {
+  font-weight: 400;
+  color: var(--secondary-text);
+}
+
+/* -- SECTION GALLERY -- */
+
+.gallery-container {
+  padding-top: 26px;
+  padding-bottom: 52px;
+}
+.gallery-title {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 32px;
+  color: var(--primary-text);
+  text-align: center;
+  margin-bottom: 28px;
+}
+.gallery-list {
+  margin-bottom: 24px;
+}
+.gallery-list-box-btn {
+}
+
+/* -- SECTION QUESTIONS -- */
+
+.questions {
+  background-image: url(../images/mobile-questions-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+@media (min-divice-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .questions {
+    background-image: url(../images/mobile-questions-bg-2х.jpg);
+  }
+}
+.container {
+}
+.questions-container {
+  padding: 116px 32px;
+}
+.questions-box {
+  width: 100%;
+  background-color: var(--light);
+  padding: 28px 20px;
+}
+.questions-box-title {
+  font-weight: 500;
+  font-size: 20px;
+  text-align: center;
+  color: var(--primary-text);
+  margin-bottom: 20px;
+}
+.questions-box-paragraph {
+  font-size: 14px;
+  text-align: center;
+  color: var(--secondary-text);
+  margin-bottom: 24px;
+}
+.questions-box-form {
+  width: 100%;
+}
+.questions-form-field {
+  margin-bottom: 20px;
+}
+
+.questions-form-input {
+  width: 100%;
+  height: 28px;
+  border: none;
+  padding-left: 4px;
+  padding-right: 4px;
+  border-bottom: 1px solid var(--grey);
+  background-color: transparent;
+}
+.questions-form-input::placeholder {
+  color: var(--secondary-text);
+}
+.questions-form-btn {
+  padding: 16px 71px;
+  font-weight: 500;
+  font-size: 16px;
+  border: none;
+  color: var(--light);
+  font-family: var(--font-family);
+  margin-top: 24px;
+  background: var(--blue);
+  text-transform: uppercase;
+  display: block;
+  margin: 0 auto;
+}
+
+/* FOOTER */
+
+.footer {
+  background-color: var(--secondary-text);
+}
+
+.footer-container {
+  padding-top: 40px;
+  padding-bottom: 45px;
+}
+.footer-box {
+}
+.footer-box-paragraph {
+  font-size: 28px;
+  text-align: center;
+  color: var(--light);
+  margin-bottom: 28px;
+}
+.footer-box-contacts {
+  padding-left: 29px;
+  padding-bottom: 35px;
+}
+.footer-box-adress {
+}
+.footer-adress-list {
+}
+.footer-adress-item {
+  color: var(--light);
+  margin-bottom: 20px;
+}
+.footer-adress-icon {
+  width: 40px;
+  height: 40px;
+  fill: var(--light);
+}
+.footer-adress-item-link {
+  color: var(--light);
+}
+.footer-adress-item-link {
+}
+.footer-box-social {
+}
+.footer-created {
+  text-align: center;
+  font-family: var(--second-family);
+  color: var(--grey);
+}
+
+/* -- ADAPTIVE -- */
+
+@media screen and (min-width: 375px) {
+}
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 1440px) {
+}
+
+@media screen and (min-width: 1920px) {
+}
