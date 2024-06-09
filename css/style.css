@@ -17,6 +17,10 @@ body {
   font-style: normal;
 }
 
+main {
+  position: relative;
+}
+
 .link {
   text-decoration: none;
 }
@@ -38,6 +42,11 @@ body {
 }
 
 /* -- HEADER -- */
+.container-general-bg {
+  position: relative;
+  width: 320px;
+  margin: 0 auto;
+}
 
 .container {
   width: 320px;
@@ -62,6 +71,7 @@ body {
 }
 
 .header-logo {
+  fill: red;
   width: 40px;
   height: 40px;
 }
@@ -147,7 +157,6 @@ body {
 /* -- HERO -- */
 
 .hero-container {
-  position: relative;
   padding-top: 188px;
   padding-bottom: 193px;
   background-image: url(../images/mobile-hero.jpg);
@@ -249,23 +258,33 @@ body {
 }
 
 .advantages-list-item {
-  padding: 8px 7px 8px 30px;
+  position: relative;
+  padding: 8px 7px 8px 58px;
   font-family: var(--font-family);
   font-size: 14px;
   color: var(--light);
   background-color: var(--blue);
 }
 
-.questions-box-form:not(:last-of-type) {
+.advantages-list-item:not(:last-child) {
   margin-bottom: 28px;
+}
+
+.advantages-list-item::before {
+  position: absolute;
+  top: 50%;
+  left: 30px;
+  content: "";
+  display: block;
+  width: 24px;
+  height: 24px;
+  background-image: url(../images/mobile-advantages-star.svg);
+  background-repeat: no-repeat;
+  transform: translateY(-50%);
 }
 
 /* -- SECTION UPCOMING TOURS -- */
 
-.tours {
-}
-.container {
-}
 .tours-container {
   padding-top: 26px;
   padding-bottom: 26px;
@@ -403,7 +422,10 @@ body {
 
 /* -- SECTION QUESTIONS -- */
 
-.questions {
+.container {
+}
+.questions-container {
+  padding: 116px 32px;
   background-image: url(../images/mobile-questions-bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -415,11 +437,6 @@ body {
   .questions {
     background-image: url(../images/mobile-questions-bg-2х.jpg);
   }
-}
-.container {
-}
-.questions-container {
-  padding: 116px 32px;
 }
 .questions-box {
   width: 100%;
@@ -475,10 +492,10 @@ body {
 /* FOOTER */
 
 .footer {
-  background-color: var(--secondary-text);
 }
 
 .footer-container {
+  background-color: var(--secondary-text);
   padding-top: 40px;
   padding-bottom: 45px;
 }
@@ -499,16 +516,21 @@ body {
 .footer-adress-list {
 }
 .footer-adress-item {
+  display: flex;
+  align-items: center;
   color: var(--light);
   margin-bottom: 20px;
 }
-.footer-adress-icon {
-  width: 40px;
-  height: 40px;
-  fill: var(--light);
-}
 .footer-adress-item-link {
+  display: flex;
+  align-items: center;
   color: var(--light);
+}
+.footer-adress-link-icon {
+  width: 32px;
+  height: 32px;
+  fill: var(--light);
+  margin-right: 4px;
 }
 .footer-adress-item-link {
 }
