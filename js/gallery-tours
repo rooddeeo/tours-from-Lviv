@@ -1,0 +1,23 @@
+const btnLeft = document.querySelector(".btn-left");
+const btnRight = document.querySelector(".btn-right");
+let allCards = document.querySelector(".tours-list");
+
+// let i = 0;
+
+// btnLeft.onclick = function () {
+//   allCards[i].style.display = "none";
+//   i--;
+//   if (i < 0) {
+//     i = allCards.length - 1;
+//   }
+//   allCards[i].style.display = "block";
+// };
+
+// btnRight.onclick = function () {
+//   allCards[i].style.display = "none";
+//   i++;
+//   if (i >= allCards.length) {
+//     i = 0;
+//   }
+//   allCards[i].style.display = "block";
+// };
