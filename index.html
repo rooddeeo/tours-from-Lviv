@@ -32,25 +32,31 @@
             </a>
             <ul class="header-menu-list">
               <li class="header-menu-item">
-                <a class="header-menu-link hover-effect" href="#aboutUs"
+                <a class="header-menu-link underline" href="#aboutUs"
                   >About us</a
                 >
               </li>
               <li class="header-menu-item">
-                <a class="header-menu-link hover-effect" href="#tours">Tours</a>
+                <a class="header-menu-link header-menu-underline" href="#tours"
+                  >Tours</a
+                >
               </li>
               <li class="header-menu-item">
-                <a class="header-menu-link hover-effect" href="#reviews"
+                <a
+                  class="header-menu-link header-menu-underline"
+                  href="#reviews"
                   >Reviews</a
                 >
               </li>
               <li class="header-menu-item">
-                <a class="header-menu-link hover-effect" href="#gallery"
+                <a
+                  class="header-menu-link header-menu-underline"
+                  href="#gallery"
                   >Gallery</a
                 >
               </li>
               <li class="header-menu-item">
-                <a class="header-menu-link hover-effect" href="#footer"
+                <a class="header-menu-link header-menu-underline" href="#footer"
                   >Contacts</a
                 >
               </li>
@@ -60,94 +66,112 @@
               class="header-menu-btn"
               onclick="toggleMenu()"
             >
-              <svg class="header-btn-icon" width="40" height="40">
+              <svg class="header-btn-icon icon-open" width="40" height="40">
                 <use href="./images/icons.svg#icon-mob-menu"></use>
+              </svg>
+              <svg class="header-btn-icon icon-close" width="40" height="40">
+                <use href="./images/icons.svg#icon-close-menu"></use>
               </svg>
             </button>
           </nav>
 
           <!-- mobile menu -->
-          <!-- <div class="backdrop" onclick="toggleMenu()"></div>
-  <div class="header-mob-menu">
-
-    <ul class="header-mob-menu-list">
-      <li class="header-mob-menu-item">
-        <a
-          class="header-mob-menu-link hover-effect"
-          onclick="toggleMenu()"
-          href="#experience"
-          >Experience</a
-        >
-      </li>
-      <li class="header-mob-menu-item">
-        <a
-          class="header-mob-menu-link hover-effect"
-          onclick="toggleMenu()"
-          href="#projects"
-          >Work</a
-        >
-      </li>
-      <li class="header-mob-menu-item">
-        <a
-          class="header-mob-menu-link hover-effect"
-          onclick="toggleMenu()"
-          href="#photography"
-          >Photography</a
-        >
-      </li>
-      <li class="header-mob-menu-item">
-        <a
-          class="header-mob-menu-link hover-effect"
-          onclick="toggleMenu()"
-          href="#footer"
-          >Contact</a
-        >
-      </li>
-    </ul>
-    <div class="header-mob-social">
-      <ul class="header-mob-social-list">
-        <li class="header-mob-social-list-item">
-          <a class="header-mob-social-item-link" href="#">
-            <svg
-              class="header-mob-social-link-icon"
-              width="24"
-              height="24"
-            >
-              <use
-                class="header-mob-social-icon-twitter"
-                href="./images/icons.svg#icon-twitter"
-              ></use></svg
-          ></a>
-        </li>
-        <li class="header-mob-social-list-item">
-          <a class="header-mob-social-item-link" href="#">
-            <svg
-              class="header-mob-social-link-icon"
-              width="24"
-              height="24"
-            >
-              <use
-                class="header-mob-social-icon-dribbble"
-                href="./images/icons.svg#icon-dribbble"
-              ></use></svg
-          ></a>
-        </li>
-        <li class="header-mob-social-list-item">
-          <a class="header-mob-social-item-link" href="#">
-            <svg
-              class="header-mob-social-link-icon"
-              width="24"
-              height="24"
-            >
-              <use
-                class="header-mob-social-icon-linkedIn"
-                href="./images/icons.svg#icon-linkedIn"
-              ></use></svg
-          ></a>
-        </li>
-      </ul>
-    </div>
-  </div>-->
+          <div class="header-mob-menu">
+            <ul class="header-mob-menu-list">
+              <li class="header-mob-menu-item">
+                <a
+                  class="header-mob-menu-link header-menu-underline"
+                  onclick="toggleMenu()"
+                  href="#aboutUs"
+                  >About us</a
+                >
+              </li>
+              <li class="header-mob-menu-item">
+                <a
+                  class="header-mob-menu-link header-menu-underline"
+                  onclick="toggleMenu()"
+                  href="#tours"
+                  >Тours</a
+                >
+              </li>
+              <li class="header-mob-menu-item">
+                <a
+                  class="header-mob-menu-link header-menu-underline"
+                  onclick="toggleMenu()"
+                  href="#reviews"
+                  >Reviews</a
+                >
+              </li>
+              <li class="header-mob-menu-item">
+                <a
+                  class="header-mob-menu-link header-menu-underline"
+                  onclick="toggleMenu()"
+                  href="#gallery"
+                  >Gallery</a
+                >
+              </li>
+              <li class="header-mob-menu-item">
+                <a
+                  class="header-mob-menu-link header-menu-underline"
+                  onclick="toggleMenu()"
+                  href="#footer"
+                  >Contacts</a
+                >
+              </li>
+            </ul>
+            <div class="header-mob-social">
+              <ul class="header-mob-social-list">
+                <li class="header-mob-social-list-item">
+                  <a
+                    class="header-mob-social-item-link"
+                    href="#"
+                    aria-label="telegram"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                  >
+                    <svg
+                      class="header-mob-social-link-icon"
+                      width="40"
+                      height="40"
+                    >
+                      <use href="./images/icons.svg#icon-telegram"></use></svg
+                  ></a>
+                </li>
+                <li class="header-mob-social-list-item">
+                  <a
+                    class="header-mob-social-item-link"
+                    href="#"
+                    aria-label="instagram"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                  >
+                    <svg
+                      class="header-mob-social-link-icon"
+                      width="40"
+                      height="40"
+                    >
+                      <use href="./images/icons.svg#icon-instagram"></use></svg
+                  ></a>
+                </li>
+                <li class="header-mob-social-list-item">
+                  <a
+                    class="header-mob-social-item-link"
+                    href="#"
+                    aria-label="facebook"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                  >
+                    <svg
+                      class="header-mob-social-link-icon"
+                      width="40"
+                      height="40"
+                    >
+                      <use href="./images/icons.svg#icon-facebook"></use></svg
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </header>
@@ -165,49 +189,7 @@
               real reboot
             </p>
             <button class="hero-box-btn" type="button">book a tour</button>
-            <!-- <ul class="hero-box-social">
-              <li class="hero-box-social-telegram">
-                <a
-                  class="hero-box-social-link"
-                  href="#"
-                  aria-label="telegram"
-                  target="_blank"
-                  rel="noreferrer noopener"
-                  >telegram
-                  <svg class="hero-box-social-icon" width="40" height="40">
-                    <use href="./icons.svg#icon-telegram"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="hero-box-social-instagram">
-                <a
-                  class="hero-box-social-link"
-                  href="#"
-                  aria-label="instagram"
-                  target="_blank"
-                  rel="noreferrer noopener"
-                  >instagram
-                  <svg class="hero-box-social-icon" width="40" height="40">
-                    <use href="./icons.svg#icon-instagram"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="hero-box-social-facebook">
-                <a
-                  class="hero-box-social-link"
-                  href="#"
-                  aria-label="facebook"
-                  target="_blank"
-                  rel="noreferrer noopener"
-                  >facebook
-                  <svg class="hero-box-social-icon" width="40" height="40">
-                    <use href="./icons.svg#icon-facebook"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul> -->
           </div>
-          <!-- <div class="hero-bg-desktop"></div> -->
         </div>
       </section>
 
@@ -811,7 +793,7 @@
 
       <!-- SECTION QUESTIONS -->
       <section class="questions">
-        <h2 class="questions-title"><!-- скрыть при помощи CSS --></h2>
+        <h2 class="questions-title visually-hidden"></h2>
         <div class="container questions-container">
           <div class="questions-box">
             <h3 class="questions-box-title">Do you have any questions?</h3>
@@ -865,7 +847,6 @@
                   id="question"
                 />
               </div>
-
               <button type="button" class="questions-form-btn">call me</button>
             </form>
           </div>
@@ -921,7 +902,64 @@
                 </ul>
               </address>
               <div class="footer-box-social">
-                <!-- вставить социалку с секции герой -->
+                <div class="footer-mob-social">
+                  <ul class="footer-mob-social-list">
+                    <li class="footer-mob-social-list-item">
+                      <a
+                        class="footer-mob-social-item-link"
+                        href="#"
+                        aria-label="telegram"
+                        target="_blank"
+                        rel="noreferrer noopener"
+                      >
+                        <svg
+                          class="footer-mob-social-link-icon"
+                          width="40"
+                          height="40"
+                        >
+                          <use
+                            href="./images/icons.svg#icon-telegram"
+                          ></use></svg
+                      ></a>
+                    </li>
+                    <li class="footer-mob-social-list-item">
+                      <a
+                        class="footer-mob-social-item-link"
+                        href="#"
+                        aria-label="instagram"
+                        target="_blank"
+                        rel="noreferrer noopener"
+                      >
+                        <svg
+                          class="footer-mob-social-link-icon"
+                          width="40"
+                          height="40"
+                        >
+                          <use
+                            href="./images/icons.svg#icon-instagram"
+                          ></use></svg
+                      ></a>
+                    </li>
+                    <li class="footer-mob-social-list-item">
+                      <a
+                        class="footer-mob-social-item-link"
+                        href="#"
+                        aria-label="facebook"
+                        target="_blank"
+                        rel="noreferrer noopener"
+                      >
+                        <svg
+                          class="footer-mob-social-link-icon"
+                          width="40"
+                          height="40"
+                        >
+                          <use
+                            href="./images/icons.svg#icon-facebook"
+                          ></use></svg
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
@@ -929,7 +967,7 @@
         </div>
       </section>
     </main>
-    <!-- <script src="./js/mobile-menu.js"></script> -->
+    <script src="./js/mobile-menu.js"></script>
     <!-- <script src="./js/gallery-tours"></script> -->
   </body>
 </html>

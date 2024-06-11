@@ -41,6 +41,10 @@ main {
   --grey: #a3a5a3;
 }
 
+.hidden {
+  visibility: hidden;
+}
+
 /* -- HEADER -- */
 .container-general-bg {
   position: relative;
@@ -76,33 +80,56 @@ main {
 }
 
 .header-menu-btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  position: relative;
   width: 40px;
   height: 40px;
 }
 
 .header-btn-icon {
+  width: 30px; /* 40 для 375 */
+  height: 30px; /* 40 для 375 */
+  position: absolute;
+  top: 5px; /* 0 для 375 */
+  left: 5px; /* 0 для 375 */
   stroke: var(--light);
 }
-/* -- mobile menu -- */
-/*.backdrop {
+
+.icon-close {
   display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 888;
-  backdrop-filter: blur(2px);
-  background-color: rgba(30, 24, 35, 0.5);
-  transition: opacity 300ms linear, visibility 300ms linear;
 }
 
-.backdropOn {
-  display: block;
+.header-menu-list {
+  display: none;
 }
+
+.header-menu-underline {
+  position: relative;
+}
+
+.header-menu-underline:after {
+  position: absolute;
+  top: 35px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0;
+  content: "";
+  color: transparent;
+  background: var(--light);
+  height: 1px;
+}
+
+.header-menu-underline:after,
+.header-menu-underline::before {
+  transition: all 0.5s;
+}
+
+.header-menu-underline:hover:after {
+  width: 100%;
+}
+
+/* -- mobile menu -- */
 
 .header-mob-menu {
   display: flex;
@@ -112,11 +139,10 @@ main {
   top: 0;
   left: 0;
   z-index: 999;
-  width: 200px;
+  width: 233px;
   height: 100%;
-  padding: 20px;
-  background-color: var(--base);
-  border-right: 1px solid var(--dark-grey);
+  padding: 132px 32px 20px 32px;
+  background-color: rgba(32, 35, 33, 0.7);
   overflow: auto;
   transform: translateX(-100%);
   transition-property: transform;
@@ -128,29 +154,27 @@ main {
   transform: translateX(0);
 }
 
- .header-mob-btn-close {
-  display: block;
-  margin-left: auto;
-  cursor: pointer;
-  fill: #ffffff;
-} 
-
-.header-mob-menu-link {
-  color: var(--peach-accent);
-}
-
-.header-mob-menu-item {
-  margin-bottom: 20px;
+.header-mob-menu-list {
+  margin-bottom: 40px;
 }
 
 .header-mob-menu-item:not(:last-child) {
-  margin-bottom: 20px;
-}
-*/
-.header-menu-list {
-  display: none;
+  margin-bottom: 25px; /*30 для 375 */
 }
 
+.header-mob-menu-link {
+  font-size: 24px; /*28 для 375 */
+  color: var(--light);
+}
+
+.header-mob-social-list-item:not(:last-child) {
+  margin-bottom: 28px; /*32 для 375 */
+}
+.header-mob-social-link-icon {
+  width: 32px; /* 40 для 375 */
+  height: 32px; /* 40 для 375 */
+  fill: var(--light);
+}
 /* -- HERO -- */
 
 .hero-container {
@@ -602,11 +626,16 @@ main {
   padding-left: 29px;
   padding-bottom: 35px;
 }
-
+.footer-adress-list {
+  margin-bottom: 20px;
+}
 .footer-adress-item {
   display: flex;
   align-items: center;
   color: var(--light);
+}
+
+.footer-adress-item:not(:last-child) {
   margin-bottom: 20px;
 }
 
@@ -635,7 +664,13 @@ main {
   fill: var(--blue);
 }
 
-.footer-box-social {
+.footer-mob-social-list {
+  display: flex;
+  gap: 32px;
+}
+
+.footer-mob-social-link-icon {
+  fill: var(--light);
 }
 
 .footer-created {
