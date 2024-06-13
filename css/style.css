@@ -63,7 +63,7 @@ main {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 999;
+  z-index: 888;
   padding-top: 20px;
   padding-bottom: 20px;
 }
@@ -88,9 +88,6 @@ main {
 .header-btn-icon {
   width: 30px; /* 40 для 375 */
   height: 30px; /* 40 для 375 */
-  position: absolute;
-  top: 5px; /* 0 для 375 */
-  left: 5px; /* 0 для 375 */
   stroke: var(--light);
 }
 
@@ -677,6 +674,127 @@ main {
   text-align: center;
   font-family: var(--second-family);
   color: var(--grey);
+}
+
+/* -- MODAL BOOK -- */
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 888;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(32, 35, 33, 0.5);
+  transition: opacity 300ms linear, visibility 300ms linear;
+  opacity: 0;
+  visibility: hidden;
+}
+.modalBook {
+  width: 320px;
+  min-height: 504px;
+  padding: 52px 28px 36px 28px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 999;
+  transform: translate(-50%, -50%);
+  background-color: var(--light);
+  transition: opacity 300ms linear, visibility 300ms linear;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modalBook-btn-clouse {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 30px;
+  height: 30px;
+}
+.modalBook-btn-clouse-icon {
+  width: 15px;
+  height: 15px;
+  stroke: var(--secondary-text);
+}
+.modalBook-title {
+  margin-bottom: 20px;
+  font-size: 24px;
+  text-align: center;
+  color: var(--primary-text);
+}
+.modalBook-content {
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 24px;
+  color: var(--secondary-text);
+}
+.modalBook-form {
+  width: 100%;
+}
+
+.modalBook-form-input {
+  margin-bottom: 20px;
+}
+
+.modalBook-form-field:not(:last-child) {
+  margin-bottom: 20px;
+}
+.modalBook-form-label {
+}
+.modalBook-form-input-text {
+  width: 100%;
+  border: none;
+  font-size: 16px;
+  padding-left: 4px;
+  padding-right: 4px;
+  border-bottom: 1px solid var(--grey);
+  background-color: transparent;
+}
+
+.modalBook-form-input::placeholder {
+  color: var(--secondary-text);
+}
+
+.modalBook-form-checkbox {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 26px;
+}
+
+.modalBook-form-checkbox-field:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.modalBook-form-checkbox-input:checked + .modalBook-form-checkbox-text span {
+  stroke: #000;
+}
+.modalBook-form-checkbox-text {
+  display: flex;
+  align-items: center;
+  color: var(--primary-text);
+}
+.modalBook-checkbox-custom {
+  width: 24px;
+  height: 24px;
+  border: 1px solid var(--secondary-text);
+  margin-right: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: transparent;
+}
+.modalBook-form-btn {
+  background-color: var(--blue);
+  text-transform: uppercase;
+  padding: 16px;
+  width: 100%;
+  color: var(--light);
 }
 
 /* -- ADAPTIVE -- */

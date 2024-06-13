@@ -188,7 +188,9 @@
               Journeys to the very heart of the Carpathians for those who want a
               real reboot
             </p>
-            <button class="hero-box-btn" type="button">book a tour</button>
+            <button class="hero-box-btn" type="button" data-modal-open>
+              book a tour
+            </button>
           </div>
         </div>
       </section>
@@ -966,8 +968,125 @@
           <div class="footer-created">&#169; Сreated by LelekaSoft</div>
         </div>
       </section>
+
+      <!-- MODAL BOOK -->
+      <div class="backdrop" data-modal-backdrop>
+        <div class="modalBook" data-modal>
+          <button type="button" class="modalBook-btn-clouse" data-modal-close>
+            <svg class="modalBook-btn-clouse-icon" width="30" height="30">
+              <use href="./images/icons.svg#icon-close-menu"></use>
+            </svg>
+          </button>
+          <p class="modalBook-title">Book a tour</p>
+          <p class="modalBook-content">
+            You can leave your application here and our manager will call you
+            within 10 minutes
+          </p>
+          <form class="modalBook-form">
+            <div class="modalBook-form-input">
+              <div class="modalBook-form-field">
+                <label
+                  class="modalBook-form-label"
+                  for="name"
+                  aria-label="Your name"
+                ></label>
+                <input
+                  class="modalBook-form-input-text"
+                  type="text"
+                  placeholder="Your name*"
+                  name="name"
+                  id="name"
+                  required
+                />
+              </div>
+              <div class="modalBook-form-field">
+                <label
+                  class="modalBook-form-label"
+                  for="phone"
+                  aria-label="Phone number"
+                ></label>
+                <input
+                  class="modalBook-form-input-text"
+                  type="tel"
+                  placeholder="Phone number*"
+                  name="phone"
+                  id="phone"
+                  required
+                />
+              </div>
+            </div>
+            <div class="modalBook-form-checkbox">
+              <div class="modalBook-form-checkbox-field">
+                <input
+                  type="checkbox"
+                  name="Hoverla"
+                  id="Hoverla"
+                  class="modalBook-form-checkbox-input visually-hidden"
+                  value="true"
+                />
+                <label for="Hoverla" class="modalBook-form-checkbox-text">
+                  <span class="modalBook-checkbox-custom">
+                    <svg
+                      class="modalBook-checkbox-custom-icon"
+                      width="12"
+                      height="12"
+                    >
+                      <use
+                        href="./images/icons.svg#icon-check-mark"
+                      ></use></svg></span
+                  >Ascent to Hoverla</label
+                >
+              </div>
+              <div class="modalBook-form-checkbox-field">
+                <input
+                  type="checkbox"
+                  name="Bukovel"
+                  id="Bukovel"
+                  class="modalBook-form-checkbox-input visually-hidden"
+                  value="true"
+                />
+                <label for="Bukovel" class="modalBook-form-checkbox-text">
+                  <span class="modalBook-checkbox-custom">
+                    <svg
+                      class="modalBook-checkbox-custom-icon"
+                      width="12"
+                      height="12"
+                    >
+                      <use
+                        href="./images/icons.svg#icon-check-mark"
+                      ></use></svg></span
+                  >Ski tour to Bukovel</label
+                >
+              </div>
+              <div class="modalBook-form-checkbox-field">
+                <input
+                  type="checkbox"
+                  name="Carpathians"
+                  id="Carpathians"
+                  class="modalBook-form-checkbox-input visually-hidden"
+                  value="true"
+                />
+                <label for="Carpathians" class="modalBook-form-checkbox-text">
+                  <span class="modalBook-checkbox-custom">
+                    <svg
+                      class="modalBook-checkbox-custom-icon"
+                      width="12"
+                      height="12"
+                    >
+                      <use
+                        href="./images/icons.svg#icon-check-mark"
+                      ></use></svg></span
+                  >Week in Carpathians</label
+                >
+              </div>
+            </div>
+            <button type="button" class="modalBook-form-btn">Call me</button>
+          </form>
+        </div>
+      </div>
     </main>
     <script src="./js/mobile-menu.js"></script>
+    <script src="./js/modal.js"></script>
     <!-- <script src="./js/gallery-tours"></script> -->
   </body>
 </html>
