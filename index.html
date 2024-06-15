@@ -188,7 +188,7 @@
               Journeys to the very heart of the Carpathians for those who want a
               real reboot
             </p>
-            <button class="hero-box-btn" type="button" data-modal-open>
+            <button class="hero-box-btn" type="button" data-modal-book-open>
               book a tour
             </button>
           </div>
@@ -270,7 +270,11 @@
               <div class="tours-list-item-info">
                 <h3 class="tours-item-title">Ascent to Hoverla</h3>
                 <p class="tours-item-paragraph">From UAH 4,499/person</p>
-                <button class="tours-item-btn" type="button">
+                <button
+                  class="tours-item-btn"
+                  type="button"
+                  data-modal-tours-open
+                >
                   more details
                 </button>
               </div>
@@ -971,8 +975,12 @@
 
       <!-- MODAL BOOK -->
       <div class="backdrop" data-modal-backdrop>
-        <div class="modalBook" data-modal>
-          <button type="button" class="modalBook-btn-clouse" data-modal-close>
+        <div class="modalBook" data-modal-book>
+          <button
+            type="button"
+            class="modalBook-btn-clouse"
+            data-modal-book-close
+          >
             <svg class="modalBook-btn-clouse-icon" width="30" height="30">
               <use href="./images/icons.svg#icon-close-menu"></use>
             </svg>
@@ -1080,13 +1088,68 @@
                 >
               </div>
             </div>
-            <button type="button" class="modalBook-form-btn">Call me</button>
+            <button type="button" class="modalBook-form-btn" data-modal-close>
+              Call me
+            </button>
           </form>
+        </div>
+      </div>
+
+      <!-- MODAL TOURS -->
+      <div class="backdrop" data-modal-backdrop-tours>
+        <div class="modalTours" data-modal-tours>
+          <button
+            type="button"
+            class="modalTours-btn-clouse"
+            data-modal-tours-close
+          >
+            <svg class="modalTours-btn-clouse-icon" width="30" height="30">
+              <use href="./images/icons.svg#icon-close-menu"></use>
+            </svg>
+          </button>
+          <div class="modalTours-card1">
+            <div class="modalTours-info modalTours-info-bg1">
+              <p class="modalTours-info-title">Ascent to Hoverla</p>
+              <div class="modalTours-info-choice">
+                <p class="modalTours-info-period">1 day</p>
+                <ul class="modalTours-info-list">
+                  <li class="modalTours-info-item">Departure from Lviv</li>
+                  <li class="modalTours-info-item">Manyava Hermitage</li>
+                  <li class="modalTours-info-item">Manyava waterfall</li>
+                  <li class="modalTours-info-item">Arrival to Bukovel</li>
+                  <li class="modalTours-info-item">Check-in</li>
+                  <li class="modalTours-info-item">Dinner</li>
+                  <li class="modalTours-info-item">Evening by the fireplace</li>
+                </ul>
+              </div>
+              <div class="modalTours-info-choice visually-hidden">
+                <p class="modalTours-info-period">2 day</p>
+                <ul class="modalTours-info-list">
+                  <li class="modalTours-info-item">Breakfast</li>
+                  <li class="modalTours-info-item">Ascent to Hoverla</li>
+                  <li class="modalTours-info-item">Dinner</li>
+                  <li class="modalTours-info-item">Reacretion</li>
+                  <li class="modalTours-info-item">Sauna</li>
+                  <li class="modalTours-info-item">Dinner</li>
+                </ul>
+              </div>
+              <ul class="modalTours-info-list-switch">
+                <li class="modalTours-info-list-switch-item"></li>
+                <li class="modalTours-info-list-switch-item"></li>
+                <li class="modalTours-info-list-switch-item"></li>
+              </ul>
+            </div>
+            <p class="modalTours-price">UAH 4,499/person</p>
+            <button type="button" class="modalTours-btn" data-modal-close>
+              Book a tour
+            </button>
+          </div>
         </div>
       </div>
     </main>
     <script src="./js/mobile-menu.js"></script>
-    <script src="./js/modal.js"></script>
+    <script src="./js/modal-book.js"></script>
+    <script src="./js/modal-tours.js"></script>
     <!-- <script src="./js/gallery-tours"></script> -->
   </body>
 </html>

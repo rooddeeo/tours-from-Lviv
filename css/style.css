@@ -797,6 +797,138 @@ main {
   color: var(--light);
 }
 
+/* -- MODAL TOURS -- */
+
+.modalTours {
+  width: 315px;
+  min-height: 480px;
+  padding-bottom: 28px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 999;
+  transform: translate(-50%, -50%);
+  background-color: var(--light);
+  transition: opacity 300ms linear, visibility 300ms linear;
+}
+
+.modalTours-btn-clouse {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 30px;
+  height: 30px;
+}
+
+.modalTours-btn-clouse-icon {
+  width: 15px;
+  height: 15px;
+  stroke: var(--light);
+}
+
+.modalTours-info {
+  padding: 56px 37px 20px 0;
+  margin-bottom: 28px;
+}
+
+.modalTours-info-bg1 {
+  padding: 56px 37px 20px 0;
+  margin-bottom: 28px;
+  background-image: url(../images/mobile-tours-1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+@media (min-divice-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .modalTours-info {
+    background-image: url(../images/mobile-tours-1-2х.jpg);
+  }
+}
+
+.modalTours-info-bg2 {
+  background-image: url(../images/mobile-tours-2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+@media (min-divice-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .modalTours-info {
+    background-image: url(../images/mobile-tours-2-2х.jpg);
+  }
+}
+
+.modalTours-info-title {
+  font-weight: 600;
+  font-size: 18px;
+  color: var(--light);
+  margin-bottom: 12px;
+  padding-left: 48px;
+}
+
+.modalTours-info-period {
+  height: 48px;
+  display: flex;
+  align-items: center;
+  background-color: var(--blue);
+  border-radius: 0 8px 8px 0;
+  height: 48px;
+  margin-bottom: 12px;
+  color: var(--light);
+  padding-left: 48px;
+}
+
+.modalTours-info-list {
+  margin-bottom: 86px;
+}
+
+.modalTours-info-item {
+  font-weight: 500;
+  color: var(--light);
+  padding-left: 48px;
+}
+
+.modalTours-info-item:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+.modalTours-info-list-switch {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding-left: 48px;
+}
+
+.modalTours-info-list-switch-item {
+  width: 12px;
+  height: 12px;
+  background-color: var(--grey);
+  border-radius: 50%;
+}
+
+.modalTours-price {
+  font-weight: 600;
+  text-align: center;
+  color: var(--secondary-text);
+  margin-bottom: 16px;
+}
+
+.modalTours-btn {
+  background-color: var(--blue);
+  text-transform: uppercase;
+  color: var(--light);
+  padding: 16px 83px;
+  margin: 0 auto;
+  display: block;
+}
+
 /* -- ADAPTIVE -- */
 
 @media screen and (min-width: 375px) {
