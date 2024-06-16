@@ -381,46 +381,81 @@
           <h2 class="reviews-title">Reviews</h2>
           <ul class="reviews-list">
             <li class="reviews-list-item">
-              <div class="reviews-list-item-bg"></div>
-              <div class="reviews-list-item-content">
+              <div class="reviews-list-item-face">
+                <div class="reviews-list-item-bg"></div>
+                <div class="reviews-list-item-content">
+                  <picture>
+                    <source
+                      media="(min-width: 1440px) and (min-resolution: 2dppx)"
+                      srcset="./images/desktop-reviews-user-1-2х.png 2x"
+                    />
+                    <source
+                      media="(min-width: 1440px)"
+                      srcset="./images/desktop-reviews-user-1.png"
+                    />
+                    <source
+                      media="(min-width: 768px) and (min-resolution: 2dppx)"
+                      srcset="./images/tablet-reviews-user-1-2х.png 2x"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="./images/tablet-reviews-user-1.png"
+                    />
+                    <source
+                      media="(min-width: 375px) and (min-resolution: 2dppx)"
+                      srcset="./images/mobile-reviews-user-1-2х.png 2x"
+                    />
+                    <source
+                      media="(min-width: 375px)"
+                      srcset="./images/mobile-reviews-user-1.png"
+                    />
+                    <img
+                      class="reviews-list-item-photo"
+                      src="./images/mobile-reviews-user-1.png"
+                      alt="photo of Maria"
+                    />
+                  </picture>
+                  <h3 class="reviews-item-title">Maria</h3>
+                  <p class="reviews-item-paragraph">
+                    It was really cool! We saw everything - sun, snow, rain,
+                    fog! It's very exciting and interesting, you won't regret it
+                    - it's worth going and seeing everything with your own eyes.
+                    Everything is organized at the highest level.
+                  </p>
+                </div>
+              </div>
+              <div class="reviews-list-item-outside">
                 <picture>
                   <source
                     media="(min-width: 1440px) and (min-resolution: 2dppx)"
-                    srcset="./images/desktop-reviews-user-1-2х.png 2x"
+                    srcset="./images/desktop-reviews-user-1-outside-2х.jpg 2x"
                   />
                   <source
                     media="(min-width: 1440px)"
-                    srcset="./images/desktop-reviews-user-1.png"
+                    srcset="./images/desktop-reviews-user-1-outside.jpg"
                   />
                   <source
                     media="(min-width: 768px) and (min-resolution: 2dppx)"
-                    srcset="./images/tablet-reviews-user-1-2х.png 2x"
+                    srcset="./images/tablet-reviews-user-1-outside-2х.jpg 2x"
                   />
                   <source
                     media="(min-width: 768px)"
-                    srcset="./images/tablet-reviews-user-1.png"
+                    srcset="./images/tablet-reviews-user-1-outside.jpg"
                   />
                   <source
                     media="(min-width: 375px) and (min-resolution: 2dppx)"
-                    srcset="./images/mobile-reviews-user-1-2х.png 2x"
+                    srcset="./images/mobile-reviews-user-1-outside-2х.jpg 2x"
                   />
                   <source
                     media="(min-width: 375px)"
-                    srcset="./images/mobile-reviews-user-1.png"
+                    srcset="./images/mobile-reviews-user-1-outside.jpg"
                   />
                   <img
-                    class="reviews-list-item-photo"
-                    src="./images/mobile-reviews-user-1.png"
-                    alt="photo of Maria"
+                    class="reviews-list-item-outside-photo"
+                    src="./images/mobile-reviews-user-1-outside.jpg"
+                    alt="Mary's Journey"
                   />
                 </picture>
-                <h3 class="reviews-item-title">Maria</h3>
-                <p class="reviews-item-paragraph">
-                  It was really cool! We saw everything - sun, snow, rain, fog!
-                  It's very exciting and interesting, you won't regret it - it's
-                  worth going and seeing everything with your own eyes.
-                  Everything is organized at the highest level.
-                </p>
               </div>
             </li>
             <li class="reviews-list-item">
@@ -1109,37 +1144,218 @@
           </button>
           <div class="modalTours-card1">
             <div class="modalTours-info modalTours-info-bg1">
-              <p class="modalTours-info-title">Ascent to Hoverla</p>
-              <div class="modalTours-info-choice">
-                <p class="modalTours-info-period">1 day</p>
-                <ul class="modalTours-info-list">
-                  <li class="modalTours-info-item">Departure from Lviv</li>
-                  <li class="modalTours-info-item">Manyava Hermitage</li>
-                  <li class="modalTours-info-item">Manyava waterfall</li>
-                  <li class="modalTours-info-item">Arrival to Bukovel</li>
-                  <li class="modalTours-info-item">Check-in</li>
-                  <li class="modalTours-info-item">Dinner</li>
-                  <li class="modalTours-info-item">Evening by the fireplace</li>
-                </ul>
-              </div>
-              <div class="modalTours-info-choice visually-hidden">
-                <p class="modalTours-info-period">2 day</p>
-                <ul class="modalTours-info-list">
-                  <li class="modalTours-info-item">Breakfast</li>
-                  <li class="modalTours-info-item">Ascent to Hoverla</li>
-                  <li class="modalTours-info-item">Dinner</li>
-                  <li class="modalTours-info-item">Reacretion</li>
-                  <li class="modalTours-info-item">Sauna</li>
-                  <li class="modalTours-info-item">Dinner</li>
-                </ul>
+              <div class="modalTours-info-box">
+                <p class="modalTours-info-title">Ascent to Hoverla</p>
+                <div class="modalTours-info-choice">
+                  <p class="modalTours-info-period">1 day</p>
+                  <ul class="modalTours-info-list">
+                    <li class="modalTours-info-item">Departure from Lviv</li>
+                    <li class="modalTours-info-item">Manyava Hermitage</li>
+                    <li class="modalTours-info-item">Manyava waterfall</li>
+                    <li class="modalTours-info-item">Arrival to Bukovel</li>
+                    <li class="modalTours-info-item">Check-in</li>
+                    <li class="modalTours-info-item">Dinner</li>
+                    <li class="modalTours-info-item">
+                      Evening by the fireplace
+                    </li>
+                  </ul>
+                </div>
+                <div class="modalTours-info-choice visually-hidden">
+                  <p class="modalTours-info-period">2 day</p>
+                  <ul class="modalTours-info-list">
+                    <li class="modalTours-info-item">Breakfast</li>
+                    <li class="modalTours-info-item">Ascent to Hoverla</li>
+                    <li class="modalTours-info-item">Dinner</li>
+                    <li class="modalTours-info-item">Reacretion</li>
+                    <li class="modalTours-info-item">Sauna</li>
+                    <li class="modalTours-info-item">Dinner</li>
+                  </ul>
+                </div>
+                <div class="modalTours-info-choice visually-hidden">
+                  <p class="modalTours-info-period">3 day</p>
+                  <ul class="modalTours-info-list">
+                    <li class="modalTours-info-item">Breakfast</li>
+                    <li class="modalTours-info-item">A walk around Bukovel</li>
+                    <li class="modalTours-info-item">
+                      Check out from the hotel
+                    </li>
+                    <li class="modalTours-info-item">Yaremche</li>
+                    <li class="modalTours-info-item">Arrival in Lviv</li>
+                  </ul>
+                </div>
               </div>
               <ul class="modalTours-info-list-switch">
-                <li class="modalTours-info-list-switch-item"></li>
+                <li class="modalTours-info-list-switch-item active"></li>
                 <li class="modalTours-info-list-switch-item"></li>
                 <li class="modalTours-info-list-switch-item"></li>
               </ul>
             </div>
             <p class="modalTours-price">UAH 4,499/person</p>
+            <button type="button" class="modalTours-btn" data-modal-close>
+              Book a tour
+            </button>
+          </div>
+          <div class="modalTours-card2 visually-hidden">
+            <div class="modalTours-info modalTours-info-bg4">
+              <div class="modalTours-info-box">
+                <p class="modalTours-info-title">Ski tour to Bukovel</p>
+                <div class="modalTours-info-choice">
+                  <p class="modalTours-info-period">1 day</p>
+                  <ul class="modalTours-info-list">
+                    <li class="modalTours-info-item">Departure from Lviv</li>
+                    <li class="modalTours-info-item">Manyava Hermitage</li>
+                    <li class="modalTours-info-item">Manyava waterfall</li>
+                    <li class="modalTours-info-item">Arrival to Bukovel</li>
+                    <li class="modalTours-info-item">Check-in</li>
+                    <li class="modalTours-info-item">Dinner</li>
+                    <li class="modalTours-info-item">
+                      Evening by the fireplace
+                    </li>
+                  </ul>
+                </div>
+                <div class="modalTours-info-choice visually-hidden">
+                  <p class="modalTours-info-period">2 day</p>
+                  <ul class="modalTours-info-list">
+                    <li class="modalTours-info-item">Breakfast</li>
+                    <li class="modalTours-info-item">Recreation</li>
+                    <li class="modalTours-info-item">Lunch</li>
+                    <li class="modalTours-info-item">Reacretion</li>
+                    <li class="modalTours-info-item">Dinner</li>
+                    <li class="modalTours-info-item">Vacation</li>
+                  </ul>
+                </div>
+                <div class="modalTours-info-choice visually-hidden">
+                  <p class="modalTours-info-period">3 day</p>
+                  <ul class="modalTours-info-list">
+                    <li class="modalTours-info-item">Breakfast</li>
+                    <li class="modalTours-info-item">A walk around Bukovel</li>
+                    <li class="modalTours-info-item">Dinner</li>
+                    <li class="modalTours-info-item">Recreation</li>
+                    <li class="modalTours-info-item">СSauna</li>
+                    <li class="modalTours-info-item">Dinner</li>
+                  </ul>
+                </div>
+                <div class="modalTours-info-choice visually-hidden">
+                  <p class="modalTours-info-period">4 day</p>
+                  <ul class="modalTours-info-list">
+                    <li class="modalTours-info-item">Breakfast</li>
+                    <li class="modalTours-info-item">Recreation</li>
+                    <li class="modalTours-info-item">Dinner</li>
+                    <li class="modalTours-info-item">Departure from Bukovel</li>
+                    <li class="modalTours-info-item">Arrival in Lviv</li>
+                  </ul>
+                </div>
+              </div>
+              <ul class="modalTours-info-list-switch">
+                <li class="modalTours-info-list-switch-item active"></li>
+                <li class="modalTours-info-list-switch-item"></li>
+                <li class="modalTours-info-list-switch-item"></li>
+                <li class="modalTours-info-list-switch-item"></li>
+              </ul>
+            </div>
+            <p class="modalTours-price">UAH 7,499/person</p>
+            <button type="button" class="modalTours-btn" data-modal-close>
+              Book a tour
+            </button>
+          </div>
+          <div class="modalTours-card3 visually-hidden">
+            <div class="modalTours-info modalTours-info-bg8">
+              <div class="modalTours-info-box">
+                <p class="modalTours-info-title">Week in Carpathians</p>
+                <div class="modalTours-info-choice">
+                  <p class="modalTours-info-period">1 day</p>
+                  <ul class="modalTours-info-list">
+                    <li class="modalTours-info-item">Departure from Lviv</li>
+                    <li class="modalTours-info-item">Dovbush rocks</li>
+                    <li class="modalTours-info-item">Lunch</li>
+                    <li class="modalTours-info-item">Tustan fortress</li>
+                    <li class="modalTours-info-item">Check-in</li>
+                    <li class="modalTours-info-item">Dinner</li>
+                  </ul>
+                </div>
+                <div class="modalTours-info-choice visually-hidden">
+                  <p class="modalTours-info-period">2 day</p>
+                  <ul class="modalTours-info-list">
+                    <li class="modalTours-info-item">Breakfast</li>
+                    <li class="modalTours-info-item">Lake Synevyr</li>
+                    <li class="modalTours-info-item">
+                      Ecopark “Valley of Wolves”
+                    </li>
+                    <li class="modalTours-info-item">Lunch</li>
+                    <li class="modalTours-info-item">
+                      ЕExcursion to Kolochava
+                    </li>
+                    <li class="modalTours-info-item">Dinner</li>
+                  </ul>
+                </div>
+                <div class="modalTours-info-choice visually-hidden">
+                  <p class="modalTours-info-period">3 day</p>
+                  <ul class="modalTours-info-list">
+                    <li class="modalTours-info-item">Breakfast</li>
+                    <li class="modalTours-info-item">Shipit waterfall</li>
+                    <li class="modalTours-info-item">Gimba mountain</li>
+                    <li class="modalTours-info-item">Recreation</li>
+                    <li class="modalTours-info-item">Dinner</li>
+                  </ul>
+                </div>
+                <div class="modalTours-info-choice visually-hidden">
+                  <p class="modalTours-info-period">4 day</p>
+                  <ul class="modalTours-info-list">
+                    <li class="modalTours-info-item">Breakfast</li>
+                    <li class="modalTours-info-item">Deer farm in Iza</li>
+                    <li class="modalTours-info-item">
+                      Warm waters in Velyatino
+                    </li>
+                    <li class="modalTours-info-item">
+                      Geographical center of Europe
+                    </li>
+                    <li class="modalTours-info-item">Dinner</li>
+                  </ul>
+                </div>
+                <div class="modalTours-info-choice visually-hidden">
+                  <p class="modalTours-info-period">5 day</p>
+                  <ul class="modalTours-info-list">
+                    <li class="modalTours-info-item">Breakfast</li>
+                    <li class="modalTours-info-item">Ascent to Hoverla</li>
+                    <li class="modalTours-info-item">Reacreation</li>
+                    <li class="modalTours-info-item">Dinner</li>
+                  </ul>
+                </div>
+                <div class="modalTours-info-choice visually-hidden">
+                  <p class="modalTours-info-period">6 day</p>
+                  <ul class="modalTours-info-list">
+                    <li class="modalTours-info-item">Breakfast</li>
+                    <li class="modalTours-info-item">
+                      Hut-museum from the "Shadows of Forgotten Ancestors"
+                    </li>
+                    <li class="modalTours-info-item">Lunch</li>
+                    <li class="modalTours-info-item">Rafting of free time</li>
+                    <li class="modalTours-info-item">Dinner</li>
+                  </ul>
+                </div>
+                <div class="modalTours-info-choice visually-hidden">
+                  <p class="modalTours-info-period">7 day</p>
+                  <ul class="modalTours-info-list">
+                    <li class="modalTours-info-item">Breakfast</li>
+                    <li class="modalTours-info-item">Dovbush trail</li>
+                    <li class="modalTours-info-item">Souvenir fair</li>
+                    <li class="modalTours-info-item">Lunch</li>
+                    <li class="modalTours-info-item">Probij waterfall</li>
+                    <li class="modalTours-info-item">Return to Lviv</li>
+                  </ul>
+                </div>
+              </div>
+              <ul class="modalTours-info-list-switch">
+                <li class="modalTours-info-list-switch-item active"></li>
+                <li class="modalTours-info-list-switch-item"></li>
+                <li class="modalTours-info-list-switch-item"></li>
+                <li class="modalTours-info-list-switch-item"></li>
+                <li class="modalTours-info-list-switch-item"></li>
+                <li class="modalTours-info-list-switch-item"></li>
+                <li class="modalTours-info-list-switch-item"></li>
+              </ul>
+            </div>
+            <p class="modalTours-price">UAH 9,999/person</p>
             <button type="button" class="modalTours-btn" data-modal-close>
               Book a tour
             </button>
