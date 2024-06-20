@@ -315,7 +315,11 @@
                 <div class="tours-list-item-info">
                   <h3 class="tours-item-title">Ski tour to Bukovel</h3>
                   <p class="tours-item-paragraph">From UAH 7,499/person</p>
-                  <button class="tours-item-btn" type="button">
+                  <button
+                    class="tours-item-btn"
+                    type="button"
+                    data-modal-tours-open
+                  >
                     more details
                   </button>
                 </div>
@@ -355,7 +359,11 @@
                 <div class="tours-list-item-info">
                   <h3 class="tours-item-title">Week in Carpathians</h3>
                   <p class="tours-item-paragraph">From UAH 9,999/person</p>
-                  <button class="tours-item-btn" type="button">
+                  <button
+                    class="tours-item-btn"
+                    type="button"
+                    data-modal-tours-open
+                  >
                     more details
                   </button>
                 </div>
@@ -908,8 +916,8 @@
 
       <!-- SECTION QUESTIONS -->
       <section class="questions">
-        <h2 class="questions-title visually-hidden"></h2>
         <div class="container questions-container">
+          <h2 class="questions-title visually-hidden"></h2>
           <div class="questions-box">
             <h3 class="questions-box-title">Do you have any questions?</h3>
             <p class="questions-box-paragraph">
@@ -1217,9 +1225,9 @@
             </svg>
           </button>
           <div class="modalTours-card1">
-            <div class="modalTours-info modalTours-info-bg1">
+            <div class="modalTours-info">
+              <p class="modalTours-info-title">Ascent to Hoverla</p>
               <div class="modalTours-info-box">
-                <p class="modalTours-info-title">Ascent to Hoverla</p>
                 <div class="modalTours-info-choice">
                   <p class="modalTours-info-period">1 day</p>
                   <ul class="modalTours-info-list">
@@ -1234,7 +1242,7 @@
                     </li>
                   </ul>
                 </div>
-                <div class="modalTours-info-choice visually-hidden">
+                <div class="modalTours-info-choice">
                   <p class="modalTours-info-period">2 day</p>
                   <ul class="modalTours-info-list">
                     <li class="modalTours-info-item">Breakfast</li>
@@ -1245,7 +1253,7 @@
                     <li class="modalTours-info-item">Dinner</li>
                   </ul>
                 </div>
-                <div class="modalTours-info-choice visually-hidden">
+                <div class="modalTours-info-choice">
                   <p class="modalTours-info-period">3 day</p>
                   <ul class="modalTours-info-list">
                     <li class="modalTours-info-item">Breakfast</li>
@@ -1259,9 +1267,18 @@
                 </div>
               </div>
               <ul class="modalTours-info-list-switch">
-                <li class="modalTours-info-list-switch-item active"></li>
-                <li class="modalTours-info-list-switch-item"></li>
-                <li class="modalTours-info-list-switch-item"></li>
+                <li
+                  class="modalTours-info-list-switch-item"
+                  data-index="0"
+                ></li>
+                <li
+                  class="modalTours-info-list-switch-item"
+                  data-index="1"
+                ></li>
+                <li
+                  class="modalTours-info-list-switch-item"
+                  data-index="2"
+                ></li>
               </ul>
             </div>
             <p class="modalTours-price">UAH 4,499/person</p>
@@ -1269,10 +1286,10 @@
               Book a tour
             </button>
           </div>
-          <div class="modalTours-card2 visually-hidden">
+          <div class="modalTours-card2">
             <div class="modalTours-info modalTours-info-bg4">
+              <p class="modalTours-info-title">Ski tour to Bukovel</p>
               <div class="modalTours-info-box">
-                <p class="modalTours-info-title">Ski tour to Bukovel</p>
                 <div class="modalTours-info-choice">
                   <p class="modalTours-info-period">1 day</p>
                   <ul class="modalTours-info-list">
@@ -1287,7 +1304,7 @@
                     </li>
                   </ul>
                 </div>
-                <div class="modalTours-info-choice visually-hidden">
+                <div class="modalTours-info-choice">
                   <p class="modalTours-info-period">2 day</p>
                   <ul class="modalTours-info-list">
                     <li class="modalTours-info-item">Breakfast</li>
@@ -1298,7 +1315,7 @@
                     <li class="modalTours-info-item">Vacation</li>
                   </ul>
                 </div>
-                <div class="modalTours-info-choice visually-hidden">
+                <div class="modalTours-info-choice">
                   <p class="modalTours-info-period">3 day</p>
                   <ul class="modalTours-info-list">
                     <li class="modalTours-info-item">Breakfast</li>
@@ -1309,7 +1326,7 @@
                     <li class="modalTours-info-item">Dinner</li>
                   </ul>
                 </div>
-                <div class="modalTours-info-choice visually-hidden">
+                <div class="modalTours-info-choice">
                   <p class="modalTours-info-period">4 day</p>
                   <ul class="modalTours-info-list">
                     <li class="modalTours-info-item">Breakfast</li>
@@ -1321,10 +1338,22 @@
                 </div>
               </div>
               <ul class="modalTours-info-list-switch">
-                <li class="modalTours-info-list-switch-item active"></li>
-                <li class="modalTours-info-list-switch-item"></li>
-                <li class="modalTours-info-list-switch-item"></li>
-                <li class="modalTours-info-list-switch-item"></li>
+                <li
+                  class="modalTours-info-list-switch-item"
+                  data-index="0"
+                ></li>
+                <li
+                  class="modalTours-info-list-switch-item"
+                  data-index="1"
+                ></li>
+                <li
+                  class="modalTours-info-list-switch-item"
+                  data-index="2"
+                ></li>
+                <li
+                  class="modalTours-info-list-switch-item"
+                  data-index="3"
+                ></li>
               </ul>
             </div>
             <p class="modalTours-price">UAH 7,499/person</p>
@@ -1332,10 +1361,10 @@
               Book a tour
             </button>
           </div>
-          <div class="modalTours-card3 visually-hidden">
+          <div class="modalTours-card3">
             <div class="modalTours-info modalTours-info-bg8">
+              <p class="modalTours-info-title">Week in Carpathians</p>
               <div class="modalTours-info-box">
-                <p class="modalTours-info-title">Week in Carpathians</p>
                 <div class="modalTours-info-choice">
                   <p class="modalTours-info-period">1 day</p>
                   <ul class="modalTours-info-list">
@@ -1347,7 +1376,7 @@
                     <li class="modalTours-info-item">Dinner</li>
                   </ul>
                 </div>
-                <div class="modalTours-info-choice visually-hidden">
+                <div class="modalTours-info-choice">
                   <p class="modalTours-info-period">2 day</p>
                   <ul class="modalTours-info-list">
                     <li class="modalTours-info-item">Breakfast</li>
@@ -1362,7 +1391,7 @@
                     <li class="modalTours-info-item">Dinner</li>
                   </ul>
                 </div>
-                <div class="modalTours-info-choice visually-hidden">
+                <div class="modalTours-info-choice">
                   <p class="modalTours-info-period">3 day</p>
                   <ul class="modalTours-info-list">
                     <li class="modalTours-info-item">Breakfast</li>
@@ -1372,7 +1401,7 @@
                     <li class="modalTours-info-item">Dinner</li>
                   </ul>
                 </div>
-                <div class="modalTours-info-choice visually-hidden">
+                <div class="modalTours-info-choice">
                   <p class="modalTours-info-period">4 day</p>
                   <ul class="modalTours-info-list">
                     <li class="modalTours-info-item">Breakfast</li>
@@ -1386,7 +1415,7 @@
                     <li class="modalTours-info-item">Dinner</li>
                   </ul>
                 </div>
-                <div class="modalTours-info-choice visually-hidden">
+                <div class="modalTours-info-choice">
                   <p class="modalTours-info-period">5 day</p>
                   <ul class="modalTours-info-list">
                     <li class="modalTours-info-item">Breakfast</li>
@@ -1395,7 +1424,7 @@
                     <li class="modalTours-info-item">Dinner</li>
                   </ul>
                 </div>
-                <div class="modalTours-info-choice visually-hidden">
+                <div class="modalTours-info-choice">
                   <p class="modalTours-info-period">6 day</p>
                   <ul class="modalTours-info-list">
                     <li class="modalTours-info-item">Breakfast</li>
@@ -1407,7 +1436,7 @@
                     <li class="modalTours-info-item">Dinner</li>
                   </ul>
                 </div>
-                <div class="modalTours-info-choice visually-hidden">
+                <div class="modalTours-info-choice">
                   <p class="modalTours-info-period">7 day</p>
                   <ul class="modalTours-info-list">
                     <li class="modalTours-info-item">Breakfast</li>
@@ -1420,13 +1449,34 @@
                 </div>
               </div>
               <ul class="modalTours-info-list-switch">
-                <li class="modalTours-info-list-switch-item active"></li>
-                <li class="modalTours-info-list-switch-item"></li>
-                <li class="modalTours-info-list-switch-item"></li>
-                <li class="modalTours-info-list-switch-item"></li>
-                <li class="modalTours-info-list-switch-item"></li>
-                <li class="modalTours-info-list-switch-item"></li>
-                <li class="modalTours-info-list-switch-item"></li>
+                <li
+                  class="modalTours-info-list-switch-item"
+                  data-index="0"
+                ></li>
+                <li
+                  class="modalTours-info-list-switch-item"
+                  data-index="1"
+                ></li>
+                <li
+                  class="modalTours-info-list-switch-item"
+                  data-index="2"
+                ></li>
+                <li
+                  class="modalTours-info-list-switch-item"
+                  data-index="3"
+                ></li>
+                <li
+                  class="modalTours-info-list-switch-item"
+                  data-index="4"
+                ></li>
+                <li
+                  class="modalTours-info-list-switch-item"
+                  data-index="5"
+                ></li>
+                <li
+                  class="modalTours-info-list-switch-item"
+                  data-index="6"
+                ></li>
               </ul>
             </div>
             <p class="modalTours-price">UAH 9,999/person</p>
@@ -1441,7 +1491,7 @@
     <script src="./js/modal-book.js"></script>
     <script src="./js/modal-tours.js"></script>
     <script src="./js/cards-flipped.js"></script>
-    <script src="./js/gallery-tours.js"></script>
     <script src="./js/gallery.js"></script>
+    <script src="./js/modal-tours-slider.js"></script>
   </body>
 </html>
