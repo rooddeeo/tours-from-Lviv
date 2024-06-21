@@ -57,8 +57,6 @@ main {
   top: 0;
   left: 0;
   z-index: 888;
-  padding-top: 20px;
-  padding-bottom: 20px;
 }
 
 .header-navigation {
@@ -68,19 +66,25 @@ main {
 }
 
 .header-logo {
+  position: absolute;
+  top: 20px;
+  left: 15px;
+  z-index: 1500;
   width: 40px;
   height: 40px;
 }
 
 .header-menu-btn {
-  position: relative;
+  position: absolute;
+  top: 20px;
+  right: 15px;
   width: 40px;
   height: 40px;
 }
 
 .header-btn-icon {
-  width: 30px; /* 40 для 375 */
-  height: 30px; /* 40 для 375 */
+  width: 30px;
+  height: 30px;
   stroke: var(--light);
 }
 
@@ -149,20 +153,27 @@ main {
 }
 
 .header-mob-menu-item:not(:last-child) {
-  margin-bottom: 25px; /*30 для 375 */
+  margin-bottom: 25px;
 }
 
 .header-mob-menu-link {
-  font-size: 24px; /*28 для 375 */
+  font-size: 24px;
   color: var(--light);
 }
 
 .header-mob-social-list-item:not(:last-child) {
-  margin-bottom: 28px; /*32 для 375 */
+  margin-bottom: 28px;
 }
+
+.header-mob-social-item-link {
+  display: block;
+  width: 40px;
+  height: 40px;
+}
+
 .header-mob-social-link-icon {
-  width: 32px; /* 40 для 375 */
-  height: 32px; /* 40 для 375 */
+  width: 32px;
+  height: 32px;
   fill: var(--light);
 }
 
@@ -193,7 +204,7 @@ main {
 }
 
 .hero-box-title {
-  min-width: 311px;
+  max-width: 311px;
   font-size: 40px;
   font-weight: 400;
   margin-bottom: 60px;
@@ -262,9 +273,15 @@ main {
   margin-bottom: 28px;
 }
 
-.advantages-list {
-  padding-top: 87px;
-  padding-bottom: 87px;
+.advantages-box {
+  position: relative;
+  display: flex;
+  height: 494px;
+}
+
+.advantages-box-bg1 {
+  width: 100%;
+  height: 100%;
   background-image: url(../images/mobile-advantages-1.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -274,16 +291,77 @@ main {
 @media (min-divice-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
-  .advantages-list {
+  .advantages-box-bg1 {
     background-image: url(../images/mobile-advantages-1-2х.jpg);
   }
 }
 
+.advantages-box-bg2 {
+  display: none;
+  width: 354px;
+  height: 100%;
+  background-image: url(../images/tablet-advantages-1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+@media (min-divice-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .advantages-box-bg2 {
+    background-image: url(../images/tablet-advantages-1-2х.jpg);
+  }
+}
+
+.advantages-box-bg3 {
+  display: none;
+  width: 354px;
+  height: 100%;
+  background-image: url(../images/tablet-advantages-3.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+@media (min-divice-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .advantages-box-bg3 {
+    background-image: url(../images/tablet-advantages-3-2х.jpg);
+  }
+}
+
+.advantages-box-bg4 {
+  display: none;
+  width: 354px;
+  height: 100%;
+  background-image: url(../images/desktop-advantages-2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+@media (min-divice-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .advantages-box-bg4 {
+    background-image: url(../images/desktop-advantages-2-2х.jpg);
+  }
+}
+
+.advantages-list {
+  width: 100%;
+  position: absolute;
+  top: 64px;
+  left: 0;
+}
+
 .advantages-list-item {
   position: relative;
-  padding: 8px 7px 8px 58px;
+  padding: 12px 7px 12px 58px;
   font-family: var(--font-family);
-  font-size: 12px; /* 14 для 375 */
+  font-size: 12px;
   color: var(--light);
   background-color: var(--blue);
 }
@@ -327,6 +405,7 @@ main {
   width: 100%;
   margin: 0 auto;
   overflow: hidden;
+  margin-bottom: 24px;
 }
 
 .tours-list,
@@ -336,7 +415,6 @@ main {
   width: 100%;
   padding: 0;
   margin: 0;
-  margin-bottom: 24px;
 }
 
 .tours-list-item,
@@ -354,7 +432,7 @@ main {
   border-right: 1px solid var(--blue);
   border-bottom: 1px solid var(--blue);
   border-left: 1px solid var(--blue);
-  padding: 28px 20px 28px 20px;
+  padding: 28px 20px;
 }
 
 .tours-item-title {
@@ -366,14 +444,13 @@ main {
 
 .tours-item-paragraph {
   font-weight: 600;
-  font-size: 16px;
   color: var(--secondary-text);
   margin-bottom: 20px;
 }
 
 .tours-item-btn {
   font-family: var(--font-family);
-  padding: 16px 45px; /* 16 61 для 375 */
+  padding: 16px 45px;
   background-color: var(--blue);
   border: none;
   font-weight: 500;
@@ -449,6 +526,10 @@ main {
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
+}
+
+.reviews-list-item-outside-photo {
+  margin: 0 auto;
 }
 
 .reviews-list-item-face {
@@ -531,6 +612,10 @@ main {
   margin-bottom: 28px;
 }
 
+.gallery-list-item-image {
+  width: 100%;
+}
+
 .gallery-list-btn {
   width: 23px;
   height: 23px;
@@ -591,13 +676,15 @@ main {
 }
 
 .questions-box-paragraph {
+  max-width: 243px;
   font-size: 14px;
   text-align: center;
   color: var(--secondary-text);
-  margin-bottom: 24px;
+  margin: 0 auto;
 }
 
 .questions-box-form {
+  margin-top: 20px;
   width: 100%;
 }
 
@@ -605,11 +692,15 @@ main {
   margin-bottom: 20px;
 }
 
+.questions-form-field:last-of-type {
+  margin-bottom: 24px;
+}
+
 .questions-form-input {
   width: 100%;
   height: 28px;
   border: none;
-  font-size: 13px; /* 16 для 375 */
+  font-size: 13px;
   padding-left: 4px;
   padding-right: 4px;
   border-bottom: 1px solid var(--grey);
@@ -621,13 +712,13 @@ main {
 }
 
 .questions-form-btn {
-  padding: 16px 71px;
+  width: 100%;
+  padding: 16px 10px;
   font-weight: 500;
   font-size: 16px;
   border: none;
   color: var(--light);
   font-family: var(--second-family);
-  margin-top: 24px;
   background: var(--blue);
   text-transform: uppercase;
   display: block;
@@ -687,8 +778,8 @@ main {
 }
 
 .footer-adress-link-icon {
-  width: 26px; /* 32 для 375 */
-  height: 26px; /* 32 для 375 */
+  width: 26px;
+  height: 26px;
   fill: var(--light);
   margin-right: 4px;
   transition: fill 300ms linear;
@@ -710,6 +801,12 @@ main {
 
 .footer-mob-social-link-icon {
   fill: var(--light);
+}
+
+.footer-mob-social-item-link {
+  display: block;
+  width: 40px;
+  height: 40px;
 }
 
 .footer-created {
@@ -796,7 +893,6 @@ main {
 .modalBook-form-input-text {
   width: 100%;
   border: none;
-  font-size: 16px;
   padding-left: 4px;
   padding-right: 4px;
   border-bottom: 1px solid var(--grey);
@@ -1131,8 +1227,6 @@ main {
   display: flex;
   transition: transform 0.5s ease;
   width: 100%;
-  padding: 0;
-  margin: 0;
 }
 
 .modalTours-info-title {
@@ -1209,9 +1303,331 @@ main {
 /* -- ADAPTIVE -- */
 
 @media screen and (min-width: 375px) {
+  .container-general-bg {
+    width: 375px;
+  }
+
+  .container {
+    width: 375px;
+  }
+
+  .header-btn-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .header-mob-menu-item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
+  .header-mob-menu-link {
+    font-size: 28px;
+  }
+
+  .header-mob-social-list-item:not(:last-child) {
+    margin-bottom: 32px;
+  }
+  .header-mob-social-link-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .advantages-box {
+    height: 554px;
+  }
+
+  .advantages-list {
+    top: 87px;
+  }
+
+  .advantages-list-item {
+    font-size: 14px;
+  }
+
+  .tours-item-btn {
+    padding: 16px 61px;
+  }
+
+  .questions-form-input {
+    font-size: 16px;
+  }
+
+  .footer-adress-link-icon {
+    width: 32px;
+    height: 32px;
+  }
 }
 
 @media screen and (min-width: 768px) {
+  .container-general-bg {
+    width: 768px;
+  }
+
+  .container {
+    width: 768px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .header-logo {
+    top: 24px;
+    left: 20px;
+    width: 60px;
+    height: 60px;
+  }
+
+  .header-menu-btn {
+    top: 24px;
+    right: 20px;
+  }
+
+  .header-btn-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .header-mob-menu {
+    width: 374px;
+    padding: 105px 82px 20px 82px;
+  }
+
+  .header-mob-menu-item:not(:last-child) {
+    margin-bottom: 40px;
+  }
+
+  .header-mob-social-list {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .header-mob-social-list-item:not(:last-child) {
+    margin-right: 32px;
+    margin-bottom: 0;
+  }
+
+  .header-mob-social-link-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .hero-container {
+    padding-top: 180px;
+    padding-bottom: 185px;
+  }
+
+  .hero-box-title {
+    max-width: 728px;
+    font-size: 68px;
+    margin-bottom: 40px;
+  }
+
+  .hero-box-paragraph {
+    max-width: 470px;
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 60px;
+  }
+
+  .about-container {
+    padding-top: 80px;
+    padding-bottom: 40px;
+  }
+
+  .about-title {
+    font-size: 52px;
+    margin-bottom: 40px;
+  }
+
+  .about-paragraph {
+    font-size: 20px;
+  }
+
+  .advantages-container {
+    height: 877px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .advantages-title {
+    font-size: 52px;
+    margin-bottom: 40px;
+  }
+
+  .advantages-box {
+    display: flex;
+    gap: 20px;
+    height: 494px;
+  }
+
+  .advantages-box-bg1 {
+    width: 354px;
+  }
+
+  .advantages-box-bg2 {
+    display: block;
+    margin-top: 203px;
+  }
+
+  .advantages-list {
+    width: 604px;
+    top: 80px;
+    left: 62px;
+  }
+
+  .advantages-list-item {
+    padding: 20px 7px 20px 96px;
+    font-size: 20px;
+  }
+
+  .advantages-list-item:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  .advantages-list-item::before {
+    left: 44px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .tours-box,
+  .gallery-box {
+    margin-bottom: 32px;
+  }
+
+  .tours-list-item,
+  .gallery-list-item {
+    min-width: 364px;
+  }
+
+  .reviews-list {
+    display: flex;
+  }
+
+  .tours-list-btn,
+  .tours-list-btn-icon {
+    width: 32px;
+    height: 32px;
+  }
+
+  .tours-list-btn-group,
+  .gallery-list-btn-group {
+    gap: 40px;
+  }
+  .gallery-list-btn,
+  .gallery-list-btn-icon {
+    width: 32px;
+    height: 32px;
+  }
+
+  .reviews-list-item {
+    min-width: 354px;
+  }
+
+  .reviews-list-item:not(:last-child) {
+    margin-right: 20px;
+  }
+
+  .reviews-list-item-content {
+    padding: 74px 20px 51px 20px;
+    min-height: 370px;
+  }
+
+  .reviews-item-title {
+    font-size: 24px;
+    margin-bottom: 24px;
+  }
+
+  .reviews-item-paragraph {
+    font-size: 20px;
+  }
+
+  .gallery-container {
+    padding-top: 40px;
+    padding-bottom: 80px;
+  }
+
+  .gallery-title {
+    font-size: 52px;
+    margin-bottom: 40px;
+  }
+
+  .gallery-list-btn {
+    width: 32px;
+    height: 32px;
+  }
+
+  .questions-container {
+    padding-top: 88px;
+    padding-bottom: 88px;
+  }
+
+  .questions-box {
+    max-width: 478px;
+    padding: 40px 42px;
+  }
+
+  .questions-box-form {
+    margin-top: 24px;
+  }
+
+  .questions-box-title {
+    font-size: 32px;
+    margin-bottom: 24px;
+  }
+
+  .questions-box-paragraph {
+    max-width: 345px;
+    font-size: 18px;
+  }
+
+  .questions-form-box {
+    width: 354px;
+    margin: 0 auto;
+  }
+
+  .questions-form-field {
+    margin-bottom: 24px;
+  }
+
+  .questions-form-field:last-of-type {
+    margin-bottom: 32px;
+  }
+
+  .questions-form-input {
+    height: 32px;
+    font-size: 20px;
+  }
+
+  .footer-box {
+    display: flex;
+    justify-content: space-between;
+    padding: 64px 72px 64px 114px;
+  }
+
+  .footer-box-contacts {
+    padding-left: 0;
+    padding-bottom: 0;
+  }
+
+  .footer-box-paragraph {
+    font-size: 32px;
+    margin-bottom: 0;
+  }
+
+  .footer-adress-item:not(:last-child) {
+    margin-bottom: 40px;
+  }
+  .footer-adress-link-icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 8px;
+  }
+  .footer-adress-link-content {
+    font-size: 18px;
+  }
+  .footer-adress-list {
+    margin-bottom: 40px;
+  }
 }
 
 @media screen and (min-width: 1440px) {

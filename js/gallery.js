@@ -13,19 +13,29 @@ document.addEventListener("DOMContentLoaded", () => {
 
     let currentIndex = 0;
 
+    function getVisibleItemsCount() {
+      return window.innerWidth >= 768 ? 2 : 1;
+    }
+
     function showCard(index) {
-      const offset = -index * 100;
+      const visibleItemsCount = getVisibleItemsCount();
+      const offset = -index * (100 / visibleItemsCount);
       carouselList.style.transform = `translateX(${offset}%)`;
     }
 
-    btnRight.addEventListener("click", () => {
-      currentIndex = (currentIndex + 1) % items.length;
+    function updateCurrentIndex(direction) {
+      const visibleItemsCount = getVisibleItemsCount();
+      const maxIndex = Math.ceil(items.length / visibleItemsCount) - 1;
+      currentIndex = (currentIndex + direction + maxIndex + 1) % (maxIndex + 1);
       showCard(currentIndex);
+    }
+
+    btnRight.addEventListener("click", () => {
+      updateCurrentIndex(1);
     });
 
     btnLeft.addEventListener("click", () => {
-      currentIndex = (currentIndex - 1 + items.length) % items.length;
-      showCard(currentIndex);
+      updateCurrentIndex(-1);
     });
 
     let startX = 0;
@@ -41,18 +51,21 @@ document.addEventListener("DOMContentLoaded", () => {
 
     carouselList.addEventListener("touchend", () => {
       if (startX > endX + 50) {
-        currentIndex = (currentIndex + 1) % items.length;
-        showCard(currentIndex);
+        updateCurrentIndex(1);
       } else if (startX < endX - 50) {
-        currentIndex = (currentIndex - 1 + items.length) % items.length;
-        showCard(currentIndex);
+        updateCurrentIndex(-1);
       }
     });
 
-    setInterval(() => {
-      currentIndex = (currentIndex + 1) % items.length;
+    window.addEventListener("resize", () => {
       showCard(currentIndex);
-    }, interval);
+    });
+
+    // setInterval(() => {
+    //   updateCurrentIndex(1);
+    // }, interval);
+
+    showCard(currentIndex);
   }
 
   initializeCarousel(
