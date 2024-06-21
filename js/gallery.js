@@ -61,9 +61,9 @@ document.addEventListener("DOMContentLoaded", () => {
       showCard(currentIndex);
     });
 
-    // setInterval(() => {
-    //   updateCurrentIndex(1);
-    // }, interval);
+    setInterval(() => {
+      updateCurrentIndex(1);
+    }, interval);
 
     showCard(currentIndex);
   }
