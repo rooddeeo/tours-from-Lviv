@@ -41,12 +41,12 @@ main {
 /* -- HEADER -- */
 .container-general-bg {
   position: relative;
-  width: 320px;
+  width: 100%;
   margin: 0 auto;
 }
 
 .container {
-  width: 320px;
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
@@ -1308,7 +1308,7 @@ main {
   }
 
   .container {
-    width: 375px;
+    max-width: 375px;
   }
 
   .header-btn-icon {
@@ -1364,7 +1364,7 @@ main {
   }
 
   .container {
-    width: 768px;
+    max-width: 768px;
     padding-left: 20px;
     padding-right: 20px;
   }
