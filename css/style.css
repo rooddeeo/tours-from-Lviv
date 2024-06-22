@@ -180,8 +180,6 @@ main {
 /* -- HERO -- */
 
 .hero {
-  max-width: 375px;
-  margin: 0 auto;
   background-image: url(../images/mobile-hero.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -219,6 +217,7 @@ main {
 }
 
 .hero-box-paragraph {
+  max-width: 315px;
   font-weight: 500;
   margin-bottom: 88px;
   color: var(--light);
@@ -649,8 +648,6 @@ main {
 /* -- SECTION QUESTIONS -- */
 
 .questions {
-  max-width: 375px;
-  margin: 0 auto;
   background-image: url(../images/mobile-questions-bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -1317,11 +1314,11 @@ main {
 
 @media screen and (min-width: 375px) {
   .container-general-bg {
-    width: 375px;
+    width: 345px;
   }
 
   .container {
-    max-width: 375px;
+    max-width: 345px;
   }
 
   .header-mob-menu-item:not(:last-child) {
@@ -1392,6 +1389,8 @@ main {
   .header-menu-btn {
     top: 24px;
     right: 20px;
+    width: 40px;
+    height: 40px;
   }
 
   .header-btn-icon {
@@ -1424,8 +1423,6 @@ main {
   }
 
   .hero {
-    max-width: 768px;
-    margin: 0 auto;
     background-image: url(../images/tablet-hero.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -1588,8 +1585,6 @@ main {
   }
 
   .questions {
-    max-width: 768px;
-    margin: 0 auto;
     background-image: url(../images/tablet-questions-bg.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -1665,14 +1660,17 @@ main {
   .footer-adress-item:not(:last-child) {
     margin-bottom: 40px;
   }
+  
   .footer-adress-link-icon {
     width: 40px;
     height: 40px;
     margin-right: 8px;
   }
+  
   .footer-adress-link-content {
     font-size: 18px;
   }
+  
   .footer-adress-list {
     margin-bottom: 40px;
   }
