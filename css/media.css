@@ -1,0 +1,780 @@
+/* -- ADAPTIVE -- */
+
+@media screen and (min-width: 375px) {
+  .container-general-bg {
+    width: 345px;
+  }
+
+  .container {
+    max-width: 345px;
+  }
+
+  .header-mob-menu-item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
+  .header-mob-menu-link {
+    font-size: 28px;
+  }
+
+  .header-mob-social-list-item:not(:last-child) {
+    margin-bottom: 32px;
+  }
+
+  .hero-box-title {
+    font-size: 40px;
+  }
+
+  .header-mob-social-link-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .advantages-box {
+    height: 554px;
+  }
+
+  .advantages-list {
+    top: 87px;
+  }
+
+  .advantages-list-item {
+    font-size: 14px;
+  }
+
+  .tours-item-btn {
+    padding: 16px 59px;
+  }
+
+  .questions-form-input {
+    font-size: 16px;
+  }
+
+  .footer-adress-link-icon {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container-general-bg {
+    width: 768px;
+  }
+
+  .container {
+    max-width: 768px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .header-logo {
+    top: 24px;
+    left: 20px;
+    width: 60px;
+    height: 60px;
+  }
+
+  .header-menu-btn {
+    top: 24px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .header-btn-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .header-mob-menu {
+    width: 374px;
+    padding: 105px 82px 20px 82px;
+  }
+
+  .header-mob-menu-item:not(:last-child) {
+    margin-bottom: 40px;
+  }
+
+  .header-mob-social-list {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .header-mob-social-list-item:not(:last-child) {
+    margin-right: 32px;
+    margin-bottom: 0;
+  }
+
+  .header-mob-social-link-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .hero {
+    background-image: url(../images/tablet-hero.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  @media (min-divice-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: url(../images/tablet-hero-2x.jpg);
+    }
+  }
+
+  .hero-container {
+    padding-top: 180px;
+    padding-bottom: 185px;
+  }
+
+  .hero-box-title {
+    max-width: 728px;
+    font-size: 68px;
+    margin-bottom: 40px;
+  }
+
+  .hero-box-paragraph {
+    max-width: 470px;
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 60px;
+  }
+
+  .about-container {
+    padding-top: 80px;
+    padding-bottom: 40px;
+  }
+
+  .about-title {
+    font-size: 52px;
+    margin-bottom: 40px;
+  }
+
+  .about-paragraph {
+    font-size: 20px;
+  }
+
+  .advantages-container {
+    height: 877px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .advantages-title {
+    font-size: 52px;
+    margin-bottom: 40px;
+  }
+
+  .advantages-box {
+    display: flex;
+    gap: 20px;
+    height: 494px;
+  }
+
+  .advantages-box-bg1 {
+    width: 354px;
+  }
+
+  .advantages-box-bg2 {
+    display: block;
+    margin-top: 203px;
+  }
+
+  .advantages-list {
+    width: 604px;
+    top: 80px;
+    left: 62px;
+  }
+
+  .advantages-list-item {
+    padding: 20px 7px 20px 96px;
+    font-size: 20px;
+  }
+
+  .advantages-list-item:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  .advantages-list-item::before {
+    left: 44px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .tours-box,
+  .gallery-box {
+    margin-bottom: 32px;
+  }
+
+  .tours-list-item,
+  .gallery-list-item {
+    min-width: 364px;
+  }
+
+  .reviews-list {
+    display: flex;
+  }
+
+  .tours-list-btn,
+  .tours-list-btn-icon {
+    width: 32px;
+    height: 32px;
+  }
+
+  .tours-list-btn-group,
+  .gallery-list-btn-group {
+    gap: 40px;
+  }
+
+  .gallery-list-btn,
+  .gallery-list-btn-icon {
+    width: 32px;
+    height: 32px;
+  }
+
+  .reviews-list-item {
+    min-width: 354px;
+  }
+
+  .reviews-list-item:not(:last-child) {
+    margin-right: 20px;
+  }
+
+  .reviews-list-item-content {
+    padding: 74px 20px 51px 20px;
+    min-height: 370px;
+  }
+
+  .reviews-item-title {
+    font-size: 24px;
+    margin-bottom: 24px;
+  }
+
+  .reviews-item-paragraph {
+    font-size: 20px;
+  }
+
+  .gallery-container {
+    padding-top: 40px;
+    padding-bottom: 80px;
+  }
+
+  .gallery-title {
+    font-size: 52px;
+    margin-bottom: 40px;
+  }
+
+  .gallery-list-btn {
+    width: 32px;
+    height: 32px;
+  }
+
+  .questions {
+    background-image: url(../images/tablet-questions-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  @media (min-divice-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .questions {
+      background-image: url(../images/tablet-questions-bg-2х.jpg);
+    }
+  }
+
+  .questions-container {
+    padding-top: 88px;
+    padding-bottom: 88px;
+  }
+
+  .questions-box {
+    max-width: 478px;
+    padding: 40px 42px;
+  }
+
+  .questions-box-form {
+    margin-top: 24px;
+  }
+
+  .questions-box-title {
+    font-size: 32px;
+    margin-bottom: 24px;
+  }
+
+  .questions-box-paragraph {
+    max-width: 345px;
+    font-size: 18px;
+  }
+
+  .questions-form-box {
+    width: 354px;
+    margin: 0 auto;
+  }
+
+  .questions-form-field {
+    margin-bottom: 24px;
+  }
+
+  .questions-form-field:last-of-type {
+    margin-bottom: 32px;
+  }
+
+  .questions-form-input {
+    height: 32px;
+    font-size: 20px;
+  }
+
+  .footer-box {
+    display: flex;
+    justify-content: space-between;
+    padding: 64px 72px 64px 114px;
+  }
+
+  .footer-box-contacts {
+    padding-left: 0;
+    padding-bottom: 0;
+  }
+
+  .footer-box-paragraph {
+    font-size: 32px;
+    margin-bottom: 0;
+  }
+
+  .footer-adress-item:not(:last-child) {
+    margin-bottom: 40px;
+  }
+
+  .footer-adress-link-icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 8px;
+  }
+
+  .footer-adress-link-content {
+    font-size: 18px;
+  }
+
+  .footer-adress-list {
+    margin-bottom: 40px;
+  }
+
+  .modalBook {
+    width: 478px;
+    min-height: 581px;
+    padding: 60px 42px 40px 42px;
+  }
+
+  .modalBook-btn-clouse {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .modalBook-btn-clouse-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .modalBook-title {
+    max-width: 186px;
+    margin-bottom: 24px;
+    font-size: 32px;
+  }
+
+  .modalBook-content {
+    max-width: 374px;
+    font-size: 18px;
+    margin-bottom: 32px;
+  }
+
+  .modalBook-form-input {
+    width: 354px;
+    margin-bottom: 24px;
+  }
+
+  .modalBook-form-field:not(:last-child) {
+    margin-bottom: 24px;
+  }
+
+  .modalBook-form-input-text {
+    font-size: 20px;
+  }
+
+  .modalBook-form-checkbox {
+    margin-bottom: 32px;
+  }
+
+  .modalBook-form-checkbox-text {
+    font-size: 20px;
+  }
+
+  .modalBook-form-btn {
+    font-size: 20px;
+  }
+
+  .modalTours {
+    width: 728px;
+    padding-bottom: 40px;
+  }
+
+  .modalTours-btn-clouse {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .modalTours-btn-clouse-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .modalTours-info-bg1 {
+    padding: 60px 0 20px 0;
+    margin-bottom: 40px;
+    background-image: url(../images/tablet-tours-bg-1.jpg);
+  }
+
+  @media (min-divice-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .modalTours-info-bg1 {
+      background-image: url(../images/tablet-tours-bg-1-2х.jpg);
+    }
+  }
+
+  .modalTours-info-bg2 {
+    padding: 60px 0 20px 0;
+    margin-bottom: 40px;
+    background-image: url(../images/tablet-tours-bg-2.jpg);
+  }
+
+  @media (min-divice-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .modalTours-info-bg2 {
+      background-image: url(../images/tablet-tours-bg-2-2х.jpg);
+    }
+  }
+
+  .modalTours-info-bg3 {
+    padding: 60px 0 20px 0;
+    margin-bottom: 40px;
+    background-image: url(../images/tablet-tours-bg-3.jpg);
+  }
+
+  @media (min-divice-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .modalTours-info-bg3 {
+      background-image: url(../images/tablet-tours-bg-3-2х.jpg);
+    }
+  }
+
+  .modalTours-info-bg4 {
+    padding: 60px 0 20px 0;
+    margin-bottom: 40px;
+    background-image: url(../images/tablet-tours-bg-4.jpg);
+  }
+
+  @media (min-divice-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .modalTours-info-bg4 {
+      background-image: url(../images/tablet-tours-bg-4-2х.jpg);
+    }
+  }
+
+  .modalTours-info-bg5 {
+    padding: 60px 0 20px 0;
+    margin-bottom: 40px;
+    background-image: url(../images/tablet-tours-bg-5.jpg);
+  }
+
+  @media (min-divice-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .modalTours-info-bg5 {
+      background-image: url(../images/tablet-tours-bg-5-2х.jpg);
+    }
+  }
+
+  .modalTours-info-bg6 {
+    padding: 60px 0 20px 0;
+    margin-bottom: 40px;
+    background-image: url(../images/tablet-tours-bg-6.jpg);
+  }
+
+  @media (min-divice-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .modalTours-info-bg6 {
+      background-image: url(../images/tablet-tours-bg-6-2х.jpg);
+    }
+  }
+
+  .modalTours-info-bg7 {
+    padding: 60px 0 20px 0;
+    margin-bottom: 40px;
+    background-image: url(../images/tablet-tours-bg-7.jpg);
+  }
+
+  @media (min-divice-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .modalTours-info-bg7 {
+      background-image: url(../images/tablet-tours-bg-7-2х.jpg);
+    }
+  }
+
+  .modalTours-info-bg8 {
+    padding: 60px 0 20px 0;
+    margin-bottom: 40px;
+    background-image: url(../images/tablet-tours-bg-8.jpg);
+  }
+
+  @media (min-divice-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .modalTours-info-bg8 {
+      background-image: url(../images/tablet-tours-bg-8-2х.jpg);
+    }
+  }
+
+  .modalTours-info-bg9 {
+    padding: 60px 0 20px 0;
+    margin-bottom: 40px;
+    background-image: url(../images/tablet-tours-bg-9.jpg);
+  }
+
+  @media (min-divice-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .modalTours-info-bg9 {
+      background-image: url(../images/tablet-tours-bg-9-2х.jpg);
+    }
+  }
+
+  .modalTours-info-bg10 {
+    padding: 60px 0 20px 0;
+    margin-bottom: 40px;
+    background-image: url(../images/tablet-tours-bg-10.jpg);
+  }
+
+  @media (min-divice-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .modalTours-info-bg10 {
+      background-image: url(../images/tablet-tours-bg-10-2х.jpg);
+    }
+  }
+
+  .modalTours-info-bg11 {
+    padding: 60px 0 20px 0;
+    margin-bottom: 40px;
+    background-image: url(../images/tablet-tours-bg-11.jpg);
+  }
+
+  @media (min-divice-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .modalTours-info-bg11 {
+      background-image: url(../images/tablet-tours-bg-11-2х.jpg);
+    }
+  }
+
+  .modalTours-info-bg12 {
+    padding: 60px 0 20px 0;
+    margin-bottom: 40px;
+    background-image: url(../images/tablet-tours-bg-12.jpg);
+  }
+
+  @media (min-divice-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .modalTours-info-bg12 {
+      background-image: url(../images/tablet-tours-bg-12-2х.jpg);
+    }
+  }
+
+  .modalTours-info-bg13 {
+    padding: 60px 0 20px 0;
+    margin-bottom: 40px;
+    background-image: url(../images/tablet-tours-bg-13.jpg);
+  }
+
+  @media (min-divice-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .modalTours-info-bg13 {
+      background-image: url(../images/tablet-tours-bg-13-2х.jpg);
+    }
+  }
+
+  .modalTours-info-bg14 {
+    padding: 60px 0 20px 0;
+    margin-bottom: 40px;
+    background-image: url(../images/tablet-tours-bg-14.jpg);
+  }
+
+  @media (min-divice-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .modalTours-info-bg14 {
+      background-image: url(../images/tablet-tours-bg-14-2х.jpg);
+    }
+  }
+
+  .modalTours-info-title {
+    font-size: 24px;
+    padding-left: 60px;
+  }
+
+  .modalTours-info-period {
+    width: 377px;
+    margin-bottom: 16px;
+    padding-left: 60px;
+  }
+
+  .modalTours-info-item {
+    font-size: 20px;
+    padding-left: 60px;
+  }
+
+  .modalTours-info-item:not(:last-child) {
+    margin-bottom: 16px;
+  }
+
+  .modalTours-info-list {
+    height: 265px;
+    margin-bottom: 85px;
+  }
+
+  .modalTours-info-list-switch-item {
+    width: 16px;
+    height: 16px;
+  }
+
+  .modalTours-price {
+    font-size: 20px;
+    margin-bottom: 24px;
+  }
+
+  .modalTours-btn {
+    font-size: 20px;
+    padding: 16px 123px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container-general-bg {
+    width: 1200px;
+  }
+
+  .container {
+    max-width: 1200px;
+  }
+
+  .header-container {
+    position: absolute;
+    top: 40px;
+  }
+
+  .header-navigation {
+    justify-content: space-between;
+  }
+
+  .header-logo {
+    position: static;
+    top: 30px;
+    left: 171px;
+  }
+
+  .header-menu-btn {
+    display: none;
+  }
+
+  .header-menu-list {
+    display: flex;
+  }
+
+  .header-menu-list {
+    gap: 80px;
+  }
+
+  .header-menu-link {
+    font-size: 24px;
+    color: var(--light);
+  }
+
+  .header-mob-menu {
+    display: none;
+  }
+
+  .hero {
+    background-image: url(../images/desktop-hero.jpg);
+  }
+
+  @media (min-divice-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: url(../images/desktop-hero-2х.jpg);
+    }
+  }
+
+  .hero-container {
+    position: relative;
+    padding-top: 280px;
+    padding-bottom: 293px;
+  }
+
+  .hero-box-title {
+    max-width: 1170px;
+    font-size: 87px;
+    margin-bottom: 40px;
+  }
+
+  .hero-box-paragraph {
+    max-width: 675px;
+    font-size: 28px;
+    margin-bottom: 60px;
+  }
+
+  .hero-box-btn {
+    font-size: 24px;
+    padding: 20px 199px;
+  }
+
+  .hero-social {
+    display: block;
+    position: absolute;
+    bottom: 191px;
+    right: 0;
+  }
+
+  .hero-social-list-item:not(:last-child) {
+    margin-bottom: 32px;
+  }
+
+  .hero-social-item-link {
+    display: block;
+    width: 40px;
+    height: 40px;
+  }
+
+  .hero-social-link-icon {
+    fill: var(--light);
+  }
+}
+
+@media screen and (min-width: 1920px) {
+}

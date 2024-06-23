@@ -1,9 +1,11 @@
 function toggleMenu() {
+  const backdrop = document.querySelector("[data-modal-backdrop]");
   let heroTitle = document.querySelector(".hero-box-title");
   let heroParagraph = document.querySelector(".hero-box-paragraph");
   let heroBtn = document.querySelector(".hero-box-btn");
   const menu = document.querySelector(".header-mob-menu");
 
+  backdrop.classList.toggle("show");
   heroTitle.classList.toggle("hidden");
   heroParagraph.classList.toggle("hidden");
   heroBtn.classList.toggle("hidden");
