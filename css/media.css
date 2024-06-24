@@ -34,6 +34,10 @@
     height: 554px;
   }
 
+  .advantages-box-bg1 {
+    width: 315px;
+  }
+
   .advantages-list {
     top: 87px;
   }
@@ -112,9 +116,6 @@
 
   .hero {
     background-image: url(../images/tablet-hero.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
   }
 
   @media (min-divice-pixel-ratio: 2),
@@ -171,16 +172,40 @@
   .advantages-box {
     display: flex;
     gap: 20px;
-    height: 494px;
+    height: 668px;
   }
 
   .advantages-box-bg1 {
     width: 354px;
+    height: 441px;
+    background-image: url(../images/tablet-advantages-1.jpg);
   }
 
-  .advantages-box-bg2 {
+  @media (min-divice-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .advantages-box-bg1 {
+      background-image: url(../images/tablet-advantages-1-2х.jpg);
+    }
+  }
+
+  .advantages-box-bg3 {
     display: block;
+    width: 354px;
+    height: 441px;
     margin-top: 203px;
+    background-image: url(../images/tablet-advantages-3.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  @media (min-divice-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .advantages-box-bg3 {
+      background-image: url(../images/tablet-advantages-3-2х.jpg);
+    }
   }
 
   .advantages-list {
@@ -204,6 +229,11 @@
     height: 40px;
   }
 
+  .tours-title {
+    font-size: 52px;
+    margin-bottom: 40px;
+  }
+
   .tours-box,
   .gallery-box {
     margin-bottom: 32px;
@@ -212,10 +242,31 @@
   .tours-list-item,
   .gallery-list-item {
     min-width: 364px;
+    padding: 10px;
   }
 
   .reviews-list {
     display: flex;
+    justify-content: center;
+  }
+
+  .tours-list-item-info {
+    padding: 48px 20px;
+  }
+
+  .tours-item-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .tours-item-paragraph {
+    font-size: 20px;
+    margin-bottom: 40px;
+  }
+
+  .tours-item-btn {
+    font-size: 20px;
+    padding: 16px 73px;
   }
 
   .tours-list-btn,
@@ -235,17 +286,32 @@
     height: 32px;
   }
 
+  .reviews-title {
+    font-size: 52px;
+    margin-bottom: 40px;
+  }
+
   .reviews-list-item {
-    min-width: 354px;
+    width: 354px;
   }
 
   .reviews-list-item:not(:last-child) {
+    margin-bottom: 0;
+  }
+
+  .reviews-list-item:not(:nth-child(2)) {
     margin-right: 20px;
+  }
+
+  .reviews-list-item {
+    height: 504px;
+    margin-bottom: 0;
   }
 
   .reviews-list-item-content {
     padding: 74px 20px 51px 20px;
-    min-height: 370px;
+    min-height: 0;
+    height: 370px;
   }
 
   .reviews-item-title {
@@ -255,6 +321,8 @@
 
   .reviews-item-paragraph {
     font-size: 20px;
+    height: 192px;
+    overflow: auto;
   }
 
   .gallery-container {
@@ -274,9 +342,6 @@
 
   .questions {
     background-image: url(../images/tablet-questions-bg.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
   }
 
   @media (min-divice-pixel-ratio: 2),
@@ -293,12 +358,9 @@
   }
 
   .questions-box {
-    max-width: 478px;
+    width: 478px;
+    margin: 0 auto;
     padding: 40px 42px;
-  }
-
-  .questions-box-form {
-    margin-top: 24px;
   }
 
   .questions-box-title {
@@ -307,8 +369,13 @@
   }
 
   .questions-box-paragraph {
-    max-width: 345px;
+    max-width: 374px;
+    margin: 0 auto;
     font-size: 18px;
+  }
+
+  .questions-box-form {
+    margin-top: 24px;
   }
 
   .questions-form-box {
@@ -773,6 +840,222 @@
 
   .hero-social-link-icon {
     fill: var(--light);
+  }
+
+  .about-title {
+    font-size: 68px;
+    margin-bottom: 60px;
+  }
+
+  .about-paragraph {
+    font-size: 24px;
+  }
+
+  .advantages-title {
+    font-size: 68px;
+    margin-bottom: 60px;
+  }
+
+  .advantages-box-bg1 {
+    width: 377px;
+    height: 588px;
+    background-image: url(../images/desktop-advantages-1.jpg);
+  }
+
+  @media (min-divice-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .advantages-box-bg1 {
+      background-image: url(../images/desktop-advantages-1-2х.jpg);
+    }
+  }
+
+  .advantages-box-bg2 {
+    display: block;
+    width: 377px;
+    height: 507px;
+    margin-top: 80px;
+    background-image: url(../images/desktop-advantages-2.jpg);
+  }
+
+  @media (min-divice-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .advantages-box-bg2 {
+      background-image: url(../images/desktop-advantages-2-2х.jpg);
+    }
+  }
+
+  .advantages-box-bg3 {
+    width: 377px;
+    height: 588px;
+    margin-top: 80px;
+    background-image: url(../images/desktop-advantages-3.jpg);
+  }
+
+  @media (min-divice-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .advantages-box-bg3 {
+      background-image: url(../images/desktop-advantages-3-2х.jpg);
+    }
+  }
+
+  .advantages-list {
+    width: 630px;
+    left: 270px;
+  }
+
+  .advantages-list-item {
+    padding: 18px 7px 19px 178px;
+    font-size: 24px;
+  }
+
+  .advantages-list-item:not(:last-child) {
+    margin-bottom: 24px;
+  }
+
+  .advantages-list-item::before {
+    left: 126px;
+  }
+
+  .tours-title {
+    font-size: 68px;
+    margin-bottom: 60px;
+  }
+
+  .tours-box,
+  .gallery-box {
+    margin-bottom: 40px; /*  при отсутствии кнопок и 32 при наличии */
+  }
+
+  .tours-list-item {
+    min-width: 377px;
+  }
+
+  .tours-list-item-info {
+    padding: 44px 20px;
+  }
+
+  .tours-item-title {
+    font-size: 28px;
+  }
+
+  .tours-item-paragraph {
+    font-size: 24px;
+    margin-bottom: 36px;
+  }
+
+  .tours-item-btn {
+    font-size: 24px;
+    padding: 20px 69px;
+  }
+
+  .tours-list-btn-group,
+  .gallery-list-btn-group {
+    gap: 60px;
+  }
+
+  .reviews-title {
+    font-size: 68px;
+    margin-bottom: 70px;
+  }
+
+  .reviews-list-item:last-child {
+    display: block;
+  }
+
+  .reviews-list-item {
+    min-width: 377px;
+  }
+
+  .reviews-list-item:not(:nth-child(2)) {
+    margin-right: 0;
+  }
+
+  .reviews-list-item:not(:last-child) {
+    margin-right: 20px;
+  }
+
+  .reviews-list-item {
+    height: 570px;
+  }
+
+  .reviews-list-item-content {
+    padding: 83px 28px 103px 28px;
+    height: 436px;
+  }
+
+  .reviews-item-title {
+    font-size: 28px;
+  }
+
+  .gallery-title {
+    font-size: 68px;
+    margin-bottom: 60px;
+  }
+
+  .gallery-list-item {
+    min-width: 575px;
+    padding: 10px;
+  }
+
+  .questions {
+    background-image: url(../images/desktop-questions-bg.jpg);
+  }
+
+  @media (min-divice-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .questions {
+      background-image: url(../images/desktop-questions-bg-2х.jpg);
+    }
+  }
+
+  .questions-container {
+    padding-top: 244px;
+    padding-bottom: 247px;
+  }
+
+  .questions-box {
+    width: 774px;
+    padding: 60px 47px;
+  }
+
+  .questions-box-title {
+    font-size: 47px;
+    margin-bottom: 32px;
+  }
+
+  .questions-box-paragraph {
+    max-width: 502px;
+    font-size: 20px;
+  }
+
+  .questions-box-form {
+    margin-top: 44px;
+  }
+
+  .questions-form-box {
+    width: 575px;
+  }
+
+  .questions-form-field {
+    margin-bottom: 28px;
+  }
+
+  .questions-form-field:last-of-type {
+    margin-bottom: 44px;
+  }
+
+  .questions-form-input {
+    height: 37px;
+    font-size: 24px;
+  }
+
+  .questions-form-btn {
+    font-size: 24px;
+    padding: 20px 233px;
   }
 }
 

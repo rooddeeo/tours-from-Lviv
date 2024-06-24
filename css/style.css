@@ -304,60 +304,6 @@ main {
   }
 }
 
-.advantages-box-bg2 {
-  display: none;
-  width: 354px;
-  height: 100%;
-  background-image: url(../images/tablet-advantages-1.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
-@media (min-divice-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-  .advantages-box-bg2 {
-    background-image: url(../images/tablet-advantages-1-2х.jpg);
-  }
-}
-
-.advantages-box-bg3 {
-  display: none;
-  width: 354px;
-  height: 100%;
-  background-image: url(../images/tablet-advantages-3.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
-@media (min-divice-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-  .advantages-box-bg3 {
-    background-image: url(../images/tablet-advantages-3-2х.jpg);
-  }
-}
-
-.advantages-box-bg4 {
-  display: none;
-  width: 354px;
-  height: 100%;
-  background-image: url(../images/desktop-advantages-2.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
-@media (min-divice-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-  .advantages-box-bg4 {
-    background-image: url(../images/desktop-advantages-2-2х.jpg);
-  }
-}
-
 .advantages-list {
   width: 100%;
   position: absolute;
@@ -515,6 +461,10 @@ main {
   margin-bottom: 28px;
 }
 
+.reviews-list {
+  width: 100%;
+}
+
 .reviews-list-item {
   padding-bottom: 452px;
   cursor: pointer;
@@ -524,6 +474,10 @@ main {
   perspective: 1000px;
 }
 
+.reviews-list-item:last-child {
+  display: none;
+}
+
 .reviews-list-item.is-flipped {
   transform: translateX(-100%) rotateY(-180deg);
 }
@@ -531,8 +485,6 @@ main {
 .reviews-list-item-face,
 .reviews-list-item-outside {
   position: absolute;
-  width: 100%;
-  height: 100%;
   backface-visibility: hidden;
 }
 
@@ -545,7 +497,6 @@ main {
 }
 
 .reviews-list-item-outside {
-  height: 452px;
   transform: rotateY(180deg);
 }
 
@@ -558,6 +509,7 @@ main {
 }
 
 .reviews-list-item-bg {
+  width: 100%;
   height: 134px;
   background-image: url(../images/mobile-reviews-bg.jpg);
   background-repeat: no-repeat;
@@ -587,7 +539,7 @@ main {
   border-right: 1px solid var(--blue);
   border-bottom: 1px solid var(--blue);
   border-left: 1px solid var(--blue);
-  padding: 70px 35px 48px 35px;
+  padding: 73px 35px 48px 35px;
   min-height: 318px;
 }
 
@@ -672,8 +624,7 @@ main {
 }
 
 .questions-box {
-  max-width: 311px;
-  margin: 0 auto;
+  width: 100%;
   background-color: var(--light);
   padding: 28px 20px;
 }
