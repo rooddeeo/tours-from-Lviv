@@ -396,15 +396,26 @@
     font-size: 20px;
   }
 
+  .footer-container {
+    padding-top: 64px;
+    padding-bottom: 63px;
+  }
+
   .footer-box {
     display: flex;
     justify-content: space-between;
-    padding: 64px 72px 64px 114px;
+    padding-left: 114px;
+    padding-right: 52px;
+    margin-bottom: 40px;
   }
 
   .footer-box-contacts {
     padding-left: 0;
     padding-bottom: 0;
+  }
+
+  .footer-box-adress {
+    margin-bottom: 40px;
   }
 
   .footer-box-paragraph {
@@ -424,10 +435,6 @@
 
   .footer-adress-link-content {
     font-size: 18px;
-  }
-
-  .footer-adress-list {
-    margin-bottom: 40px;
   }
 
   .modalBook {
@@ -828,6 +835,12 @@
     right: 0;
   }
 
+  .stroke:hover:after,
+  .hero-social-item-link:focus:after {
+    border-radius: 100%;
+    border: 1px solid var(--light);
+  }
+
   .hero-social-list-item:not(:last-child) {
     margin-bottom: 32px;
   }
@@ -1057,7 +1070,49 @@
     font-size: 24px;
     padding: 20px 233px;
   }
+
+  .footer-container {
+    padding-top: 60px;
+    padding-bottom: 48px;
+  }
+
+  .footer-box {
+    padding-left: 198px;
+    padding-right: 188px;
+    margin-bottom: 64px;
+  }
+
+  .footer-box-paragraph {
+    font-size: 60px;
+  }
+
+  .footer-adress-link-content {
+    font-size: 24px;
+  }
 }
 
 @media screen and (min-width: 1920px) {
+  .hero {
+    background-image: url(../images/desktop-hero-1920.jpg);
+  }
+
+  @media (min-divice-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: url(../images/desktop-hero-1920-2х.jpg);
+    }
+  }
+
+  .questions {
+    background-image: url(../images/desktop-questions-bg-1920.jpg);
+  }
+
+  @media (min-divice-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .questions {
+      background-image: url(../images/desktop-questions-bg-1920-2х.jpg);
+    }
+  }
 }
