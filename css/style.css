@@ -36,6 +36,9 @@ main {
   --secondary-text: #202321;
   --blue: #5b86a1;
   --grey: #a3a5a3;
+  --padding-bg-mob: 56px 0 20px 0;
+  --padding-bg-tab: 60px 0 20px 0;
+  --padding-bg-desk: 108px 0 40px 0;
 }
 
 .hidden {
@@ -839,7 +842,6 @@ main {
   position: fixed;
   top: 0;
   left: 0;
-  /* z-index: 888; */
   width: 100%;
   height: 100%;
   background-color: rgba(32, 35, 33, 0.5);
@@ -1004,11 +1006,11 @@ main {
   margin: 0 auto;
   overflow: hidden;
   transition: background-color 0.5s ease;
+  margin-bottom: 28px;
 }
 
 .modalTours-info-bg1 {
-  padding: 56px 0 20px 0;
-  margin-bottom: 28px;
+  padding: var(--padding-bg-mob);
   background-image: url(../images/mobile-tours-bg-1.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -1024,8 +1026,7 @@ main {
 }
 
 .modalTours-info-bg2 {
-  padding: 56px 0 20px 0;
-  margin-bottom: 28px;
+  padding: var(--padding-bg-mob);
   background-image: url(../images/mobile-tours-bg-2.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -1041,8 +1042,7 @@ main {
 }
 
 .modalTours-info-bg3 {
-  padding: 56px 0 20px 0;
-  margin-bottom: 28px;
+  padding: var(--padding-bg-mob);
   background-image: url(../images/mobile-tours-bg-3.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -1058,8 +1058,7 @@ main {
 }
 
 .modalTours-info-bg4 {
-  padding: 56px 0 20px 0;
-  margin-bottom: 28px;
+  padding: var(--padding-bg-mob);
   background-image: url(../images/mobile-tours-bg-4.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -1075,8 +1074,7 @@ main {
 }
 
 .modalTours-info-bg5 {
-  padding: 56px 0 20px 0;
-  margin-bottom: 28px;
+  padding: var(--padding-bg-mob);
   background-image: url(../images/mobile-tours-bg-5.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -1092,8 +1090,7 @@ main {
 }
 
 .modalTours-info-bg6 {
-  padding: 56px 0 20px 0;
-  margin-bottom: 28px;
+  padding: var(--padding-bg-mob);
   background-image: url(../images/mobile-tours-bg-6.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -1109,8 +1106,7 @@ main {
 }
 
 .modalTours-info-bg7 {
-  padding: 56px 0 20px 0;
-  margin-bottom: 28px;
+  padding: var(--padding-bg-mob);
   background-image: url(../images/mobile-tours-bg-7.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -1126,8 +1122,7 @@ main {
 }
 
 .modalTours-info-bg8 {
-  padding: 56px 0 20px 0;
-  margin-bottom: 28px;
+  padding: var(--padding-bg-mob);
   background-image: url(../images/mobile-tours-bg-8.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -1143,8 +1138,7 @@ main {
 }
 
 .modalTours-info-bg9 {
-  padding: 56px 0 20px 0;
-  margin-bottom: 28px;
+  padding: var(--padding-bg-mob);
   background-image: url(../images/mobile-tours-bg-9.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -1160,8 +1154,7 @@ main {
 }
 
 .modalTours-info-bg10 {
-  padding: 56px 0 20px 0;
-  margin-bottom: 28px;
+  padding: var(--padding-bg-mob);
   background-image: url(../images/mobile-tours-bg-10.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -1177,8 +1170,7 @@ main {
 }
 
 .modalTours-info-bg11 {
-  padding: 56px 0 20px 0;
-  margin-bottom: 28px;
+  padding: var(--padding-bg-mob);
   background-image: url(../images/mobile-tours-bg-11.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -1194,8 +1186,7 @@ main {
 }
 
 .modalTours-info-bg12 {
-  padding: 56px 0 20px 0;
-  margin-bottom: 28px;
+  padding: var(--padding-bg-mob);
   background-image: url(../images/mobile-tours-bg-12.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -1211,8 +1202,7 @@ main {
 }
 
 .modalTours-info-bg13 {
-  padding: 56px 0 20px 0;
-  margin-bottom: 28px;
+  padding: var(--padding-bg-mob);
   background-image: url(../images/mobile-tours-bg-13.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -1228,8 +1218,7 @@ main {
 }
 
 .modalTours-info-bg14 {
-  padding: 56px 0 20px 0;
-  margin-bottom: 28px;
+  padding: var(--padding-bg-mob);
   background-image: url(../images/mobile-tours-bg-14.jpg);
   background-repeat: no-repeat;
   background-position: center;

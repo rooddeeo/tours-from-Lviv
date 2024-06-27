@@ -58,6 +58,10 @@
     width: 32px;
     height: 32px;
   }
+
+  .modalTours-info {
+    margin-bottom: 40px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -444,7 +448,6 @@
   }
 
   .modalBook-btn-clouse {
-    position: absolute;
     top: 20px;
     right: 20px;
     width: 40px;
@@ -499,7 +502,6 @@
   }
 
   .modalTours-btn-clouse {
-    position: absolute;
     top: 20px;
     right: 20px;
     width: 40px;
@@ -511,9 +513,12 @@
     height: 40px;
   }
 
-  .modalTours-info-bg1 {
-    padding: 60px 0 20px 0;
+  .modalTours-info {
     margin-bottom: 40px;
+  }
+
+  .modalTours-info-bg1 {
+    padding: var(--padding-bg-tab);
     background-image: url(../images/tablet-tours-bg-1.jpg);
   }
 
@@ -526,8 +531,7 @@
   }
 
   .modalTours-info-bg2 {
-    padding: 60px 0 20px 0;
-    margin-bottom: 40px;
+    padding: var(--padding-bg-tab);
     background-image: url(../images/tablet-tours-bg-2.jpg);
   }
 
@@ -540,8 +544,7 @@
   }
 
   .modalTours-info-bg3 {
-    padding: 60px 0 20px 0;
-    margin-bottom: 40px;
+    padding: var(--padding-bg-tab);
     background-image: url(../images/tablet-tours-bg-3.jpg);
   }
 
@@ -554,8 +557,7 @@
   }
 
   .modalTours-info-bg4 {
-    padding: 60px 0 20px 0;
-    margin-bottom: 40px;
+    padding: var(--padding-bg-tab);
     background-image: url(../images/tablet-tours-bg-4.jpg);
   }
 
@@ -568,8 +570,7 @@
   }
 
   .modalTours-info-bg5 {
-    padding: 60px 0 20px 0;
-    margin-bottom: 40px;
+    padding: var(--padding-bg-tab);
     background-image: url(../images/tablet-tours-bg-5.jpg);
   }
 
@@ -582,8 +583,7 @@
   }
 
   .modalTours-info-bg6 {
-    padding: 60px 0 20px 0;
-    margin-bottom: 40px;
+    padding: var(--padding-bg-tab);
     background-image: url(../images/tablet-tours-bg-6.jpg);
   }
 
@@ -596,8 +596,7 @@
   }
 
   .modalTours-info-bg7 {
-    padding: 60px 0 20px 0;
-    margin-bottom: 40px;
+    padding: var(--padding-bg-tab);
     background-image: url(../images/tablet-tours-bg-7.jpg);
   }
 
@@ -610,8 +609,7 @@
   }
 
   .modalTours-info-bg8 {
-    padding: 60px 0 20px 0;
-    margin-bottom: 40px;
+    padding: var(--padding-bg-tab);
     background-image: url(../images/tablet-tours-bg-8.jpg);
   }
 
@@ -624,8 +622,7 @@
   }
 
   .modalTours-info-bg9 {
-    padding: 60px 0 20px 0;
-    margin-bottom: 40px;
+    padding: var(--padding-bg-tab);
     background-image: url(../images/tablet-tours-bg-9.jpg);
   }
 
@@ -638,8 +635,7 @@
   }
 
   .modalTours-info-bg10 {
-    padding: 60px 0 20px 0;
-    margin-bottom: 40px;
+    padding: var(--padding-bg-tab);
     background-image: url(../images/tablet-tours-bg-10.jpg);
   }
 
@@ -652,8 +648,7 @@
   }
 
   .modalTours-info-bg11 {
-    padding: 60px 0 20px 0;
-    margin-bottom: 40px;
+    padding: var(--padding-bg-tab);
     background-image: url(../images/tablet-tours-bg-11.jpg);
   }
 
@@ -666,8 +661,7 @@
   }
 
   .modalTours-info-bg12 {
-    padding: 60px 0 20px 0;
-    margin-bottom: 40px;
+    padding: var(--padding-bg-tab);
     background-image: url(../images/tablet-tours-bg-12.jpg);
   }
 
@@ -680,8 +674,7 @@
   }
 
   .modalTours-info-bg13 {
-    padding: 60px 0 20px 0;
-    margin-bottom: 40px;
+    padding: var(--padding-bg-tab);
     background-image: url(../images/tablet-tours-bg-13.jpg);
   }
 
@@ -694,8 +687,7 @@
   }
 
   .modalTours-info-bg14 {
-    padding: 60px 0 20px 0;
-    margin-bottom: 40px;
+    padding: var(--padding-bg-tab);
     background-image: url(../images/tablet-tours-bg-14.jpg);
   }
 
@@ -1088,6 +1080,280 @@
 
   .footer-adress-link-content {
     font-size: 24px;
+  }
+
+  .modalBook {
+    width: 774px;
+    min-height: 745px;
+    padding: 116px 99px 60px 99px;
+  }
+
+  .modalBook-btn-clouse {
+    top: 40px;
+    right: 40px;
+  }
+
+  .modalBook-title {
+    max-width: 349px;
+    margin-bottom: 28px;
+    font-size: 60px;
+  }
+
+  .modalBook-content {
+    max-width: 523px;
+    font-size: 24px;
+  }
+
+  .modalBook-form-input {
+    width: 575px;
+    margin-bottom: 28px;
+  }
+
+  .modalBook-form-field:not(:last-child) {
+    margin-bottom: 28px;
+  }
+
+  .modalBook-form-input-text {
+    font-size: 24px;
+  }
+
+  .modalBook-form-checkbox {
+    margin-bottom: 44px;
+  }
+
+  .modalBook-form-checkbox-text {
+    font-size: 24px;
+  }
+
+  .modalBook-form-btn {
+    font-size: 24px;
+  }
+
+  .modalTours {
+    width: 1170px;
+    padding-bottom: 48px;
+  }
+
+  .modalTours-btn-clouse {
+    top: 40px;
+    right: 40px;
+  }
+
+  .modalTours-info {
+    margin-bottom: 48px;
+  }
+
+  .modalTours-info-bg1 {
+    padding: var(--padding-bg-desk);
+    background-image: url(../images/desktop-tours-bg-1.jpg);
+  }
+
+  @media (min-divice-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .modalTours-info-bg1 {
+      background-image: url(../images/desktop-tours-bg-1-2х.jpg);
+    }
+  }
+
+  .modalTours-info-bg2 {
+    padding: var(--padding-bg-desk);
+    background-image: url(../images/desktop-tours-bg-2.jpg);
+  }
+
+  @media (min-divice-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .modalTours-info-bg2 {
+      background-image: url(../images/desktop-tours-bg-2-2х.jpg);
+    }
+  }
+
+  .modalTours-info-bg3 {
+    padding: var(--padding-bg-desk);
+    background-image: url(../images/desktop-tours-bg-3.jpg);
+  }
+
+  @media (min-divice-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .modalTours-info-bg3 {
+      background-image: url(../images/desktop-tours-bg-3-2х.jpg);
+    }
+  }
+
+  .modalTours-info-bg4 {
+    padding: var(--padding-bg-desk);
+    background-image: url(../images/desktop-tours-bg-4.jpg);
+  }
+
+  @media (min-divice-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .modalTours-info-bg4 {
+      background-image: url(../images/desktop-tours-bg-4-2х.jpg);
+    }
+  }
+
+  .modalTours-info-bg5 {
+    padding: var(--padding-bg-desk);
+    background-image: url(../images/desktop-tours-bg-5.jpg);
+  }
+
+  @media (min-divice-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .modalTours-info-bg5 {
+      background-image: url(../images/desktop-tours-bg-5-2х.jpg);
+    }
+  }
+
+  .modalTours-info-bg6 {
+    padding: var(--padding-bg-desk);
+    background-image: url(../images/desktop-tours-bg-6.jpg);
+  }
+
+  @media (min-divice-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .modalTours-info-bg6 {
+      background-image: url(../images/desktop-tours-bg-6-2х.jpg);
+    }
+  }
+
+  .modalTours-info-bg7 {
+    padding: var(--padding-bg-desk);
+    background-image: url(../images/desktop-tours-bg-7.jpg);
+  }
+
+  @media (min-divice-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .modalTours-info-bg7 {
+      background-image: url(../images/desktop-tours-bg-7-2х.jpg);
+    }
+  }
+
+  .modalTours-info-bg8 {
+    padding: var(--padding-bg-desk);
+    background-image: url(../images/desktop-tours-bg-8.jpg);
+  }
+
+  @media (min-divice-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .modalTours-info-bg8 {
+      background-image: url(../images/desktop-tours-bg-8-2х.jpg);
+    }
+  }
+
+  .modalTours-info-bg9 {
+    padding: var(--padding-bg-desk);
+    background-image: url(../images/desktop-tours-bg-9.jpg);
+  }
+
+  @media (min-divice-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .modalTours-info-bg9 {
+      background-image: url(../images/desktop-tours-bg-9-2х.jpg);
+    }
+  }
+
+  .modalTours-info-bg10 {
+    padding: var(--padding-bg-desk);
+    background-image: url(../images/desktop-tours-bg-10.jpg);
+  }
+
+  @media (min-divice-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .modalTours-info-bg10 {
+      background-image: url(../images/desktop-tours-bg-10-2х.jpg);
+    }
+  }
+
+  .modalTours-info-bg11 {
+    padding: var(--padding-bg-desk);
+    background-image: url(../images/desktop-tours-bg-11.jpg);
+  }
+
+  @media (min-divice-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .modalTours-info-bg11 {
+      background-image: url(../images/desktop-tours-bg-11-2х.jpg);
+    }
+  }
+
+  .modalTours-info-bg12 {
+    padding: var(--padding-bg-desk);
+    background-image: url(../images/desktop-tours-bg-12.jpg);
+  }
+
+  @media (min-divice-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .modalTours-info-bg12 {
+      background-image: url(../images/desktop-tours-bg-12-2х.jpg);
+    }
+  }
+
+  .modalTours-info-bg13 {
+    padding: var(--padding-bg-desk);
+    background-image: url(../images/desktop-tours-bg-13.jpg);
+  }
+
+  @media (min-divice-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .modalTours-info-bg13 {
+      background-image: url(../images/desktop-tours-bg-13-2х.jpg);
+    }
+  }
+
+  .modalTours-info-bg14 {
+    padding: var(--padding-bg-desk);
+    background-image: url(../images/desktop-tours-bg-14.jpg);
+  }
+
+  @media (min-divice-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .modalTours-info-bg14 {
+      background-image: url(../images/desktop-tours-bg-14-2х.jpg);
+    }
+  }
+
+  .modalTours-info-title {
+    font-size: 40px;
+    padding-left: 100px;
+  }
+
+  .modalTours-info-period {
+    font-size: 28px;
+    width: 540px;
+    padding-left: 100px;
+  }
+
+  .modalTours-info-item {
+    font-size: 28px;
+    padding-left: 100px;
+  }
+
+  .modalTours-info-list {
+    height: 375px;
+    margin-bottom: 169px;
+  }
+
+  .modalTours-price {
+    font-size: 24px;
+    margin-bottom: 28px;
+  }
+
+  .modalTours-btn {
+    font-size: 24px;
+    padding: 20px 199px;
   }
 }
 

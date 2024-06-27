@@ -3,8 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
     btnLeftSelector,
     btnRightSelector,
     carouselListSelector,
-    itemSelector,
-    interval = 5000
+    itemSelector
   ) {
     const btnLeft = document.querySelector(btnLeftSelector);
     const btnRight = document.querySelector(btnRightSelector);
@@ -60,10 +59,6 @@ document.addEventListener("DOMContentLoaded", () => {
     window.addEventListener("resize", () => {
       showCard(currentIndex);
     });
-
-    setInterval(() => {
-      updateCurrentIndex(1);
-    }, interval);
 
     showCard(currentIndex);
   }
