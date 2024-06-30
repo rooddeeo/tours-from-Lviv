@@ -3,30 +3,53 @@ document.addEventListener("DOMContentLoaded", () => {
     btnLeftSelector,
     btnRightSelector,
     carouselListSelector,
-    itemSelector
+    itemSelector,
+    visibleItemsDesktop
   ) {
     const btnLeft = document.querySelector(btnLeftSelector);
     const btnRight = document.querySelector(btnRightSelector);
     const carouselList = document.querySelector(carouselListSelector);
     const items = document.querySelectorAll(itemSelector);
 
+    if (items.length === 0) {
+      return;
+    }
+
     let currentIndex = 0;
 
     function getVisibleItemsCount() {
-      return window.innerWidth >= 768 ? 2 : 1;
+      if (window.innerWidth >= 1440) {
+        return visibleItemsDesktop;
+      } else if (window.innerWidth >= 768) {
+        return 2;
+      } else {
+        return 1;
+      }
     }
 
     function showCard(index) {
       const visibleItemsCount = getVisibleItemsCount();
       const offset = -index * (100 / visibleItemsCount);
       carouselList.style.transform = `translateX(${offset}%)`;
+      updateButtonVisibility();
     }
 
     function updateCurrentIndex(direction) {
       const visibleItemsCount = getVisibleItemsCount();
-      const maxIndex = Math.ceil(items.length / visibleItemsCount) - 1;
-      currentIndex = (currentIndex + direction + maxIndex + 1) % (maxIndex + 1);
+      const maxIndex = items.length - visibleItemsCount;
+      currentIndex = Math.min(Math.max(currentIndex + direction, 0), maxIndex);
       showCard(currentIndex);
+    }
+
+    function updateButtonVisibility() {
+      const visibleItemsCount = getVisibleItemsCount();
+      if (items.length <= visibleItemsCount) {
+        btnLeft.style.display = "none";
+        btnRight.style.display = "none";
+      } else {
+        btnLeft.style.display = "block";
+        btnRight.style.display = "block";
+      }
     }
 
     btnRight.addEventListener("click", () => {
@@ -67,13 +90,15 @@ document.addEventListener("DOMContentLoaded", () => {
     ".btn-left",
     ".btn-right",
     ".tours-list",
-    ".tours-list-item"
+    ".tours-list-item",
+    3
   );
 
   initializeCarousel(
     ".btn-gallery-left",
     ".btn-gallery-right",
     ".gallery-list",
-    ".gallery-list-item"
+    ".gallery-list-item",
+    2
   );
 });
