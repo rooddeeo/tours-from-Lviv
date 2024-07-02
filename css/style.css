@@ -1339,31 +1339,16 @@ main {
 
 .modal-content {
   position: absolute;
-  top: 25px;
-  left: 50%;
-  transform: translate(-50%) scale(0.7);
+  transform: translate(-50%, -50%) scale(0.9);
   display: block;
   max-height: 90%;
   transition: transform 0.5s ease;
+
+  top: 50%;
+  left: 50%;
+  z-index: 999;
 }
 
 .modal.show .modal-content {
-  transform: translate(-50%) scale(1);
-}
-
-.modal-close {
-  position: absolute;
-  top: 20px;
-  right: 35px;
-  color: #fff;
-  font-size: 40px;
-  font-weight: bold;
-  transition: 0.3s;
-}
-
-.modal-close:hover,
-.modal-close:focus {
-  color: #bbb;
-  text-decoration: none;
-  cursor: pointer;
+  transform: translate(-50%, -50%) scale(0.9);
 }
