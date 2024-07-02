@@ -621,6 +621,7 @@ main {
 
 .gallery-list-item-image {
   width: 100%;
+  cursor: pointer;
 }
 
 .gallery-list-btn {
@@ -1314,4 +1315,55 @@ main {
   padding: 16px 83px;
   margin: 0 auto;
   display: block;
+}
+
+/* -- MODAL GALLERY -- */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(32, 35, 33, 0.5);
+  opacity: 0;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.modal.show {
+  display: block;
+  opacity: 1;
+}
+
+.modal-content {
+  position: absolute;
+  top: 25px;
+  left: 50%;
+  transform: translate(-50%) scale(0.7);
+  display: block;
+  max-height: 90%;
+  transition: transform 0.5s ease;
+}
+
+.modal.show .modal-content {
+  transform: translate(-50%) scale(1);
+}
+
+.modal-close {
+  position: absolute;
+  top: 20px;
+  right: 35px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.modal-close:hover,
+.modal-close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
 }

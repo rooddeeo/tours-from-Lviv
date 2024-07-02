@@ -711,6 +711,7 @@
                     class="gallery-list-item-image"
                     src="./images/mobile-gallery-1.jpg"
                     alt="Sunrise in the mountains"
+                    data-large-src='{"default": "./images/desktop-gallery-modal-1.jpg", "retina": "./images/desktop-gallery-modal-1-2х.jpg"}'
                   />
                 </picture>
               </li>
@@ -744,6 +745,7 @@
                     class="gallery-list-item-image"
                     src="./images/mobile-gallery-2.jpg"
                     alt="River in the mountains"
+                    data-large-src='{"default": "./images/desktop-gallery-modal-2.jpg", "retina": "./images/desktop-gallery-modal-2-2х.jpg"}'
                   />
                 </picture>
               </li>
@@ -777,6 +779,7 @@
                     class="gallery-list-item-image"
                     src="./images/mobile-gallery-3.jpg"
                     alt="Flowers in the field"
+                    data-large-src='{"default": "./images/desktop-gallery-modal-3.jpg", "retina": "./images/desktop-gallery-modal-3-2х.jpg"}'
                   />
                 </picture>
               </li>
@@ -810,6 +813,7 @@
                     class="gallery-list-item-image"
                     src="./images/mobile-gallery-4.jpg"
                     alt="Lake in the mountains"
+                    data-large-src='{"default": "./images/desktop-gallery-modal-4.jpg", "retina": "./images/desktop-gallery-modal-4-2х.jpg"}'
                   />
                 </picture>
               </li>
@@ -843,6 +847,7 @@
                     class="gallery-list-item-image"
                     src="./images/mobile-gallery-5.jpg"
                     alt="Winter mountains"
+                    data-large-src='{"default": "./images/desktop-gallery-modal-5.jpg", "retina": "./images/desktop-gallery-modal-5-2х.jpg"}'
                   />
                 </picture>
               </li>
@@ -876,6 +881,7 @@
                     class="gallery-list-item-image"
                     src="./images/mobile-gallery-6.jpg"
                     alt="Fir trees and mountains in winter"
+                    data-large-src='{"default": "./images/desktop-gallery-modal-6.jpg", "retina": "./images/desktop-gallery-modal-6-2х.jpg"}'
                   />
                 </picture>
               </li>
@@ -909,6 +915,7 @@
                     class="gallery-list-item-image"
                     src="./images/mobile-gallery-7.jpg"
                     alt="Sunset against the backdrop of mountains and fir trees"
+                    data-large-src='{"default": "./images/desktop-gallery-modal-7.jpg", "retina": "./images/desktop-gallery-modal-7-2х.jpg"}'
                   />
                 </picture>
               </li>
@@ -942,6 +949,7 @@
                     class="gallery-list-item-image"
                     src="./images/mobile-gallery-8.jpg"
                     alt="Sunrise against the background of mountains"
+                    data-large-src='{"default": "./images/desktop-gallery-modal-8.jpg", "retina": "./images/desktop-gallery-modal-8-2х.jpg"}'
                   />
                 </picture>
               </li>
@@ -1255,7 +1263,7 @@
                 >
               </div>
             </div>
-            <button type="button" class="modalBook-form-btn" data-modal-close>
+            <button type="submit" class="modalBook-form-btn" data-modal-close>
               Call me
             </button>
           </form>
@@ -1536,9 +1544,16 @@
           </div>
         </div>
       </div>
+
+      <!-- MODAL GALLERY -->
+      <div id="modal" class="modal">
+        <span class="modal-close">&times;</span>
+        <img class="modal-content" id="modal-image" />
+      </div>
     </main>
     <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal-book.js"></script>
+    <script src="./js/modal-gallery.js"></script>
     <script src="./js/modal-tours.js"></script>
     <script src="./js/cards-flipped.js"></script>
     <script src="./js/gallery.js"></script>
