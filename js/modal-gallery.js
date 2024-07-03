@@ -29,7 +29,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const galleryItems = document.querySelectorAll(".gallery-list-item");
   galleryItems.forEach((item) => {
-    item.addEventListener("click", () => {
+    item.addEventListener("click", (event) => {
+      event.stopPropagation();
       const img = item.querySelector("img");
       const largeImageSrc = JSON.parse(img.getAttribute("data-large-src"));
       const imageSrc =
